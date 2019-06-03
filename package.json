@@ -1,0 +1,23 @@
+{
+  "name": "v9-toucans-team-16",
+  "version": "1.0.0",
+  "description": "Atomist website clone project",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-voyages/v9-toucans-team-16.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chingu-voyages/v9-toucans-team-16/issues"
+  },
+  "homepage": "https://github.com/chingu-voyages/v9-toucans-team-16#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
