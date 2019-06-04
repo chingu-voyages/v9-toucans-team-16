@@ -1,0 +1,37 @@
+.logo {
+    width: 14rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.navbar-toggle {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.visible-icon {
+    font-size: 3.4rem;
+    position: absolute;
+    right: .5rem;
+    top: 1rem;
+}
+
+.invisible-icon {
+    font-size: 0 !important;
+}
+
+.start-btn {
+    height: 5rem;
+    width: 15rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color:white;
+    background-color: #5bc399;
+    text-align: center;
+    border: 1px solid black;
+}

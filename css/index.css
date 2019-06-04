@@ -10,3 +10,99 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.logo {
+  width: 14rem;
+  margin-top: 2rem;
+  margin-left: 1.5rem; }
+
+.navbar-toggle {
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 2rem; }
+
+.visible-icon {
+  font-size: 3.4rem;
+  position: absolute;
+  right: .5rem;
+  top: 1rem; }
+
+.invisible-icon {
+  font-size: 0 !important; }
+
+.start-btn {
+  height: 5rem;
+  width: 15rem;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: white;
+  background-color: #5bc399;
+  text-align: center;
+  border: 1px solid black; }
+
+header {
+  background-image: url("/img/atomist_logo_shapes_banner-home.jpg");
+  background-size: cover;
+  height: 70vh;
+  background-position: bottom; }
+
+.navbar {
+  font-size: 2.2rem;
+  background-size: cover;
+  background-position: left top;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+.main-nav {
+  display: none; }
+  .main-nav li {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    list-style-type: none; }
+
+.nav-links {
+  text-decoration: none;
+  color: white; }
+
+.active {
+  display: block; }
+
+.disable {
+  display: none; }
+
+.background-img-toggle {
+  background-image: url("/img/atomist_logo_shapes_banner-product.jpg"); }
+
+.app-sdm-container {
+  position: absolute;
+  top: 51.5rem; }
+
+.app-sdm {
+  width: 100vw;
+  height: 25vh; }
+
+.login {
+  position: relative;
+  top: 35rem;
+  color: white;
+  margin-left: 2rem; }
+  .login p {
+    font-size: 1.6rem; }
+
+.heading {
+  text-align: center;
+  color: white;
+  width: 100vw;
+  position: absolute;
+  top: 13rem; }
+  .heading h1 {
+    font-size: 3rem; }
+  .heading p {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 1.5rem; }

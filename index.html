@@ -6,24 +6,51 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     </head>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="js-navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-times invisible-icon" id="js-times"></i>
+                    <i class="fas fa-bars" id="js-bars"></i>
+            </span>
             <img src="/img/Atomist-Logo-White-Horiz.png" alt="" class="logo">
-            <ul class="main-nav" id="js-menu">
+            <div class="main-nav" id="js-menu">
+            <ul>
                 <li>
                     <a href="#" class="nav-links">Developer</a>
+                </li>
+                <li>
                     <a href="#" class="nav-links">Pricing</a>
+                </li>
+                <li>
                     <a href="#" class="nav-links">Docs</a>
+                </li>
+                <li>
                     <a href="#" class="nav-links">Blog</a>
                 </li>
             </ul>
-            
+            <div class="login">
+                <p>Log in</p>
+                <button class="start-btn" type="submit">Get Started</button>
+            </div>
+
+        </div>
+
         </nav>
+        <div class="heading" id="js-heading">
+            <h1>Modernize Delivery<br>of<br>Cloud Native Apps</h1>
+            <p>Event-driven delivery automation<br>built for modern applications.<br>Programmable in code, ChatOps<br>comes standard.</p>
+        </div>
+        <div class="app-sdm-container" id="js-app-sdm-container">
+                <img src="/img/App-SDM-Goals-Execution.png" alt="" class="app-sdm">
+            </div>
+    
     </header>
 
     <body>
+       
 
         
         <script src="index.js" async defer></script>
