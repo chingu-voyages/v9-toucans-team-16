@@ -83,3 +83,144 @@ header {
         margin-top: 1.5rem;
     }
 }
+
+
+// Modern Delivery Platform
+$tablet: 770px;
+$desktop: 1025px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content
+    }
+}
+
+.modern-delivery-platform{
+    color: #2a2a2a;
+    margin-top: 40rem;          // To be adjusted
+    font-family: "Tofino", "sans-serif";
+    font-size: 100%;
+    text-align: center;
+
+    h2 {
+        font-size: 2.8em;
+        margin-bottom: 0.8em;
+    }
+
+    &>div{
+
+        @include tablet {
+            display: grid;
+            grid-column-gap: 0rem;
+            grid-template-columns: 50% 50%;
+        }
+
+        &>div {
+            background-color: #F7F7F7;
+            display: inline-block;
+            margin: 1.4em auto;
+            padding: 0 0 4em 0;
+            width: 85%;
+
+            &.left {
+                @include tablet {
+                    margin: 1.5em 1.5em 1.5em auto;
+                }        
+            }
+
+            &.right {
+                @include tablet {
+                    margin: 1.5em auto 1.5em 1.5em;
+                }    
+            }
+
+            img {
+                margin: 0 auto;
+                width: 16em;
+            }
+
+            &>.description {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                width: 82%;
+
+                h3 {
+                    font-size: 2em;
+                    font-weight: 500;
+                    margin: 0 auto;  
+                    
+                }
+
+                p {
+                    color: #717274;
+                    font-size: 1.6em;
+                    font-weight: 400;
+                    line-height: 1.9;
+                    margin: 0.6em auto;
+
+                    span {
+                        color: #48bc8d;
+                    }
+                }
+            }
+
+            @include tablet {
+                .description {
+                    h3 {
+                        width: 85%;
+                    }
+
+                    p {
+                        width: 88%;
+                    }
+                }
+            }
+
+            @include desktop {
+                display: flex;
+                text-align: left;
+
+                .description {
+                    background-color: transparent;
+                    padding-top: 4.5em;
+                    padding-bottom: 2em;
+                    
+                    h3 {
+                        width: 80%;
+                        margin: 0;
+                    }
+
+                    p {
+                        width: 100%;
+                        margin: 0;
+                        padding-top: 1em;
+                        padding-right: 2.8em;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        background-color: lighten(#43B788, 6%);
+        border-radius: 0.3em;
+        color: white;
+        display: inline-block;
+        font-size: 1.6em;
+        font-weight: 500;
+        margin-top: 1em;
+        padding: 1.15em 1.95em;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #43B788;
+    }
+}

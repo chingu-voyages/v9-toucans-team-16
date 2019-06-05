@@ -5,6 +5,30 @@
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: "Tofino";
+  src: url("/font/Tofino-Book.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Tofino";
+  src: url("/font/Tofino-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Tofino";
+  src: url("/font/Tofino-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Tofino";
+  src: url("/font/Tofino-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
 html {
   font-size: 62.5%; }
 
@@ -106,3 +130,83 @@ header {
     font-size: 2rem;
     font-weight: 100;
     margin-top: 1.5rem; }
+
+.modern-delivery-platform {
+  color: #2a2a2a;
+  margin-top: 40rem;
+  font-family: "Tofino", "sans-serif";
+  font-size: 100%;
+  text-align: center; }
+  .modern-delivery-platform h2 {
+    font-size: 2.8em;
+    margin-bottom: 0.8em; }
+  @media (min-width: 770px) {
+    .modern-delivery-platform > div {
+      display: grid;
+      grid-column-gap: 0rem;
+      grid-template-columns: 50% 50%; } }
+  .modern-delivery-platform > div > div {
+    background-color: #F7F7F7;
+    display: inline-block;
+    margin: 1.4em auto;
+    padding: 0 0 4em 0;
+    width: 85%; }
+    @media (min-width: 770px) {
+      .modern-delivery-platform > div > div.left {
+        margin: 1.5em 1.5em 1.5em auto; } }
+    @media (min-width: 770px) {
+      .modern-delivery-platform > div > div.right {
+        margin: 1.5em auto 1.5em 1.5em; } }
+    .modern-delivery-platform > div > div img {
+      margin: 0 auto;
+      width: 16em; }
+    .modern-delivery-platform > div > div > .description {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 82%; }
+      .modern-delivery-platform > div > div > .description h3 {
+        font-size: 2em;
+        font-weight: 500;
+        margin: 0 auto; }
+      .modern-delivery-platform > div > div > .description p {
+        color: #717274;
+        font-size: 1.6em;
+        font-weight: 400;
+        line-height: 1.9;
+        margin: 0.6em auto; }
+        .modern-delivery-platform > div > div > .description p span {
+          color: #48bc8d; }
+    @media (min-width: 770px) {
+      .modern-delivery-platform > div > div .description h3 {
+        width: 85%; }
+      .modern-delivery-platform > div > div .description p {
+        width: 88%; } }
+    @media (min-width: 1025px) {
+      .modern-delivery-platform > div > div {
+        display: flex;
+        text-align: left; }
+        .modern-delivery-platform > div > div .description {
+          background-color: transparent;
+          padding-top: 4.5em;
+          padding-bottom: 2em; }
+          .modern-delivery-platform > div > div .description h3 {
+            width: 80%;
+            margin: 0; }
+          .modern-delivery-platform > div > div .description p {
+            width: 100%;
+            margin: 0;
+            padding-top: 1em;
+            padding-right: 2.8em; } }
+  .modern-delivery-platform a {
+    background-color: #57c296;
+    border-radius: 0.3em;
+    color: white;
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 500;
+    margin-top: 1em;
+    padding: 1.15em 1.95em;
+    text-decoration: none; }
+  .modern-delivery-platform a:hover {
+    background-color: #43B788; }
