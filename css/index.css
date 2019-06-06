@@ -210,3 +210,113 @@ header {
     text-decoration: none; }
   .modern-delivery-platform a:hover {
     background-color: #43B788; }
+
+.software-delivery-machine {
+  color: #2a2a2a;
+  font-family: "Tofino", "sans-serif";
+  margin-top: 12em;
+  margin-bottom: 5em; }
+  @media (min-width: 1025px) {
+    .software-delivery-machine {
+      margin-bottom: 10em; } }
+  .software-delivery-machine > h2 {
+    font-size: 2.4em;
+    text-align: center; }
+    @media (min-width: 550px) {
+      .software-delivery-machine > h2 {
+        font-size: 3em; } }
+  .software-delivery-machine > p {
+    color: #717274;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0 auto;
+    text-align: center;
+    width: 88%; }
+    @media (min-width: 1025px) {
+      .software-delivery-machine > p {
+        font-size: 1.8em; } }
+  .software-delivery-machine > div {
+    margin: 0 auto;
+    position: relative; }
+    @media (min-width: 1025px) {
+      .software-delivery-machine > div {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 6em; } }
+    @media (min-width: 1480px) {
+      .software-delivery-machine > div {
+        width: 994px; } }
+    .software-delivery-machine > div img {
+      display: block;
+      margin: 5.5em auto 3.2em auto;
+      width: 92%; }
+      @media (min-width: 550px) {
+        .software-delivery-machine > div img {
+          max-width: 506px; } }
+      @media (min-width: 1025px) {
+        .software-delivery-machine > div img {
+          position: absolute;
+          left: -10em;
+          top: 12.5%;
+          width: 400px;
+          z-index: 1; } }
+      @media (min-width: 1480px) {
+        .software-delivery-machine > div img {
+          left: -22em;
+          top: 8em;
+          width: 800px; } }
+    .software-delivery-machine > div > div {
+      background-color: #F7F7F7;
+      margin: 0 auto;
+      padding: 1.2em;
+      width: 92%; }
+      @media (min-width: 770px) {
+        .software-delivery-machine > div > div {
+          width: 78%; } }
+      @media (min-width: 1025px) {
+        .software-delivery-machine > div > div {
+          width: 100%;
+          margin: 0 auto; } }
+      @media (min-width: 1480px) {
+        .software-delivery-machine > div > div {
+          max-width: 994px;
+          padding-bottom: 3em; } }
+      @media (min-width: 1025px) {
+        .software-delivery-machine > div > div.chatops-div {
+          padding-left: 27em; } }
+      @media (min-width: 1025px) {
+        .software-delivery-machine > div > div.event-hub-div {
+          padding-left: 32em; } }
+      @media (min-width: 1025px) {
+        .software-delivery-machine > div > div.cortex-div {
+          padding-left: 27em; } }
+      .software-delivery-machine > div > div i {
+        display: block;
+        font-size: 1.5em;
+        position: relative;
+        left: 1.3em;
+        top: 1.3em; }
+      .software-delivery-machine > div > div .command-interface {
+        color: #007BBD; }
+      .software-delivery-machine > div > div .chatops {
+        color: #5BBCC3; }
+      .software-delivery-machine > div > div .event-hub {
+        color: #C6DD72; }
+      .software-delivery-machine > div > div .cortex {
+        color: #227F7E; }
+      .software-delivery-machine > div > div .integrations {
+        color: #1B2937; }
+      .software-delivery-machine > div > div div {
+        margin: auto 1.8em 1em 5em; }
+        .software-delivery-machine > div > div div h3 {
+          color: #2a2a2a;
+          font-size: 1.8em;
+          font-weight: 500;
+          margin-bottom: 0.3em; }
+        .software-delivery-machine > div > div div p {
+          color: #717274;
+          font-size: 1.3em;
+          font-weight: 400;
+          line-height: 1.8; }

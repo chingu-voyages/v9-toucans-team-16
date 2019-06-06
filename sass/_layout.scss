@@ -84,27 +84,55 @@ header {
     }
 }
 
+// Color Definition 
+$colors: (
+    heading: #2a2a2a,
+    paragraph: #717274,
+    div-bg: #F7F7F7,
+    button-bg: lighten(#43B788, 6%),
+    button-bg-hover: #43B788
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+};
+
+// Responsive 
+$tablet1: 550px;
+$tablet2: 770px;
+$desktop1: 1025px;
+$desktop2: 1480px;
+
+@mixin tablet1 {
+    @media (min-width: #{$tablet1}) {
+        @content
+    }
+}
+
+@mixin tablet2 {
+    @media (min-width: #{$tablet2}) {
+        @content
+    }
+}
+
+@mixin desktop1 {
+    @media (min-width: #{$desktop1}) {
+        @content
+    }
+}
+
+@mixin desktop2 {
+    @media (min-width: #{$desktop2}) {
+        @content
+    }
+}
 
 // Modern Delivery Platform
-$tablet: 770px;
-$desktop: 1025px;
-
-@mixin tablet {
-    @media (min-width: #{$tablet}) {
-        @content
-    }
-}
-
-@mixin desktop {
-    @media (min-width: #{$desktop}) {
-        @content
-    }
-}
 
 .modern-delivery-platform{
-    color: #2a2a2a;
-    margin-top: 40rem;          // To be adjusted
-    font-family: "Tofino", "sans-serif";
+    color: color(heading);
+    margin-top: 40rem;                      // To be adjusted
+    font-family: "Tofino", "sans-serif";    // To be adjusted
     font-size: 100%;
     text-align: center;
 
@@ -115,27 +143,27 @@ $desktop: 1025px;
 
     &>div{
 
-        @include tablet {
+        @include tablet2 {
             display: grid;
             grid-column-gap: 0rem;
             grid-template-columns: 50% 50%;
         }
 
         &>div {
-            background-color: #F7F7F7;
+            background-color: color(div-bg);
             display: inline-block;
             margin: 1.4em auto;
             padding: 0 0 4em 0;
             width: 85%;
 
             &.left {
-                @include tablet {
+                @include tablet2 {
                     margin: 1.5em 1.5em 1.5em auto;
                 }        
             }
 
             &.right {
-                @include tablet {
+                @include tablet2 {
                     margin: 1.5em auto 1.5em 1.5em;
                 }    
             }
@@ -159,7 +187,7 @@ $desktop: 1025px;
                 }
 
                 p {
-                    color: #717274;
+                    color: color(paragraph);
                     font-size: 1.6em;
                     font-weight: 400;
                     line-height: 1.9;
@@ -171,7 +199,7 @@ $desktop: 1025px;
                 }
             }
 
-            @include tablet {
+            @include tablet2 {
                 .description {
                     h3 {
                         width: 85%;
@@ -183,7 +211,7 @@ $desktop: 1025px;
                 }
             }
 
-            @include desktop {
+            @include desktop1 {
                 display: flex;
                 text-align: left;
 
@@ -209,7 +237,7 @@ $desktop: 1025px;
     }
 
     a {
-        background-color: lighten(#43B788, 6%);
+        background-color: color(button-bg);
         border-radius: 0.3em;
         color: white;
         display: inline-block;
@@ -221,6 +249,167 @@ $desktop: 1025px;
     }
 
     a:hover {
-        background-color: #43B788;
+        background-color: color(button-bg-hover);
+    }
+}
+
+// Software Delivery Machine
+
+.software-delivery-machine {
+    color: color(heading);
+    font-family: "Tofino", "sans-serif";
+    margin-top: 12em;
+    margin-bottom: 5em;
+
+    @include desktop1 {
+        margin-bottom: 10em;
+    }
+
+    &>h2 {
+        font-size: 2.4em;
+        text-align: center;
+
+        @include tablet1 {
+            font-size: 3em;
+        }
+    }
+
+    &>p {
+        color: color(paragraph);
+        display: block;
+        font-size: 1.6em;
+        font-weight: 400;
+        line-height: 1.7;
+        margin: 0 auto;
+        text-align: center;
+        width: 88%;
+
+        @include desktop1 {
+            font-size: 1.8em;
+        }
+    }
+
+    &>div{
+        margin: 0 auto;
+        position: relative;
+
+        @include desktop1 {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 6em;
+        }
+
+        @include desktop2 {
+            width: 994px;
+        }
+
+        img {
+            display: block;
+            margin: 5.5em auto 3.2em auto; 
+            width: 92%;
+
+            @include tablet1 {
+                max-width: 506px;
+            }
+
+            @include desktop1 {
+                position: absolute;
+                left: -10em;
+                top: 12.5%;
+                width: 400px;
+                z-index: 1;
+            }
+
+            @include desktop2 {
+                left: -22em;
+                top: 8em;
+                width: 800px;
+            }
+        }
+
+        &>div {
+            background-color: color(div-bg);
+            margin: 0 auto;
+            padding: 1.2em;
+            width: 92%;
+
+            @include tablet2 {
+                width: 78%;
+            }
+
+            @include desktop1 {   
+                width: 100%;            
+                margin: 0 auto;
+            }
+
+            @include desktop2 {
+                max-width: 994px;
+                padding-bottom: 3em;
+            }
+
+            &.chatops-div {
+                @include desktop1 {
+                    padding-left: 27em;
+                }
+            }
+
+            &.event-hub-div {
+                @include desktop1 {
+                    padding-left: 32em;
+                }
+            }
+
+            &.cortex-div {
+                @include desktop1 {
+                    padding-left: 27em;
+                }
+            }
+
+            i {
+                display: block;
+                font-size: 1.5em;
+                position: relative;
+                left: 1.3em;
+                top: 1.3em;
+            }
+
+            .command-interface {
+                color: #007BBD;
+            }
+
+            .chatops {
+                color: #5BBCC3;
+            }
+
+            .event-hub {
+                color: #C6DD72;
+            }
+
+            .cortex {
+                color: #227F7E;
+            }
+
+            .integrations {
+                color: #1B2937;
+            }
+            
+            div {
+                margin: auto 1.8em 1em 5em;
+
+                h3 {
+                    color: color(heading);
+                    font-size: 1.8em;
+                    font-weight: 500;
+                    margin-bottom: 0.3em;
+                }
+
+                p {
+                    color: color(paragraph);
+                    font-size: 1.3em;
+                    font-weight: 400;
+                    line-height: 1.8;
+                }
+            }
+        }
     }
 }
