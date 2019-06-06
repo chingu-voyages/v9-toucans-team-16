@@ -320,3 +320,68 @@ header {
           font-size: 1.3em;
           font-weight: 400;
           line-height: 1.8; }
+
+.sdm {
+  background-color: #F7F7F7;
+  font-family: "Tofino", "sans-serif";
+  padding: 4em 0; }
+  .sdm h2 {
+    color: #2a2a2a;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    text-align: center; }
+    @media (min-width: 1025px) {
+      .sdm h2 {
+        margin-top: 1.5em; } }
+  @media (min-width: 770px) {
+    .sdm > div {
+      display: grid;
+      grid-template-columns: 50% 50%; } }
+  .sdm > div > div {
+    background-color: white;
+    box-shadow: 3px 3px 15px 13px #dedede;
+    margin: 2.5em auto;
+    padding: 3.5em;
+    width: 88%; }
+    @media (min-width: 770px) {
+      .sdm > div > div.left {
+        margin: 0 1.3em 4.5em auto; } }
+    @media (min-width: 1600px) {
+      .sdm > div > div.left {
+        width: 572px; } }
+    @media (min-width: 770px) {
+      .sdm > div > div.right {
+        margin: 0 auto 4.5em 1.3em; } }
+    @media (min-width: 1600px) {
+      .sdm > div > div.right {
+        width: 572px; } }
+    .sdm > div > div h3 {
+      font-size: 1.8em;
+      font-weight: 400; }
+    .sdm > div > div p {
+      color: #9e9eA7;
+      font-size: 1.5em;
+      font-weight: 400;
+      line-height: 1.4;
+      margin-top: 1em; }
+    .sdm > div > div ul {
+      color: #2a2a2a;
+      font-size: 1.4em;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 1.2em auto 1.8em 2.2em; }
+      .sdm > div > div ul li {
+        margin: 0.8em auto; }
+    .sdm > div > div a {
+      background-color: #227A7E;
+      border-radius: 0.3em;
+      color: white;
+      display: inline-block;
+      font-size: 1.3em;
+      font-weight: 500;
+      margin-top: 1.3em;
+      padding: 0.8em 1.8em;
+      text-decoration: none; }
+    .sdm > div > div a:hover {
+      background-color: #1A6362; }
