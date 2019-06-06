@@ -210,3 +210,57 @@ header {
     text-decoration: none; }
   .modern-delivery-platform a:hover {
     background-color: #43B788; }
+
+.software-delivery-machine {
+  color: #2a2a2a;
+  font-family: "Tofino", "sans-serif";
+  margin-top: 12em; }
+  .software-delivery-machine > h2 {
+    font-size: 2.4em;
+    text-align: center; }
+  .software-delivery-machine > p {
+    color: #717274;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0 auto;
+    text-align: center;
+    width: 88%; }
+  .software-delivery-machine > img {
+    display: block;
+    margin: 5.5em auto 3.2em auto;
+    width: 92%; }
+  .software-delivery-machine > div {
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    padding: 1.2em;
+    width: 92%; }
+    .software-delivery-machine > div i {
+      display: block;
+      font-size: 1.5em;
+      position: relative;
+      left: 1.3em;
+      top: 1.3em; }
+    .software-delivery-machine > div .command-interface {
+      color: #007BBD; }
+    .software-delivery-machine > div .chatops {
+      color: #5BBCC3; }
+    .software-delivery-machine > div .event-hub {
+      color: #C6DD72; }
+    .software-delivery-machine > div .cortex {
+      color: #227F7E; }
+    .software-delivery-machine > div .integrations {
+      color: #1B2937; }
+    .software-delivery-machine > div div {
+      margin: auto 1em 1.5em 5em; }
+      .software-delivery-machine > div div h3 {
+        color: #2a2a2a;
+        font-size: 1.8em;
+        font-weight: 500;
+        margin-bottom: 0.3em; }
+      .software-delivery-machine > div div p {
+        color: #717274;
+        font-size: 1.3em;
+        font-weight: 400;
+        line-height: 1.9; }
