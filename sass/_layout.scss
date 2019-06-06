@@ -88,6 +88,7 @@ header {
 $colors: (
     heading: #2a2a2a,
     paragraph: #717274,
+    light-paragraph: #9e9eA7,
     div-bg: #F7F7F7,
     button-bg: lighten(#43B788, 6%),
     button-bg-hover: #43B788
@@ -102,6 +103,7 @@ $tablet1: 550px;
 $tablet2: 770px;
 $desktop1: 1025px;
 $desktop2: 1480px;
+$desktop3: 1600px;
 
 @mixin tablet1 {
     @media (min-width: #{$tablet1}) {
@@ -123,6 +125,12 @@ $desktop2: 1480px;
 
 @mixin desktop2 {
     @media (min-width: #{$desktop2}) {
+        @content
+    }
+}
+
+@mixin desktop3 {
+    @media (min-width: #{$desktop3}) {
         @content
     }
 }
@@ -409,6 +417,103 @@ $desktop2: 1480px;
                     font-weight: 400;
                     line-height: 1.8;
                 }
+            }
+        }
+    }
+}
+
+// SDM
+
+.sdm {
+    background-color: color(div-bg);
+    font-family: "Tofino", "sans-serif";
+    padding: 4em 0;
+
+    h2 {
+        color: color(heading);
+        font-size: 2em;
+        font-weight: 400;
+        margin-bottom: 1.5em;
+        text-align: center;
+
+        @include desktop1 {
+            margin-top: 1.5em;
+        }
+    }
+
+    &>div {
+
+        @include tablet2 {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        &>div {
+            background-color: white;
+            box-shadow: 3px 3px 15px 13px darken(color(div-bg), 10%);
+            margin: 2.5em auto;
+            padding: 3.5em;
+            width: 88%;
+
+            &.left {
+                @include tablet2 {
+                    margin: 0 1.3em 4.5em auto;
+                }
+
+                @include desktop3 {
+                    width: 572px;
+                }
+            }
+
+            &.right {
+                @include tablet2 {
+                    margin: 0 auto 4.5em 1.3em;
+                }
+
+                @include desktop3 {
+                    width: 572px;
+                }
+            }
+
+            h3 {
+                font-size: 1.8em;
+                font-weight: 400;
+            }
+
+            p {
+                color: color(light-paragraph);
+                font-size: 1.5em;
+                font-weight: 400;
+                line-height: 1.4;
+                margin-top: 1em;
+            }
+
+            ul {
+                color: color(heading);
+                font-size: 1.4em;
+                font-weight: 400;
+                line-height: 1.5;
+                margin: 1.2em auto 1.8em 2.2em;
+
+                li {
+                    margin: 0.8em auto;
+                }
+            }
+
+            a {
+                background-color: #227A7E;
+                border-radius: 0.3em;
+                color: white;
+                display: inline-block;
+                font-size: 1.3em;
+                font-weight: 500;
+                margin-top: 1.3em;
+                padding: 0.8em 1.8em;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: #1A6362;
             }
         }
     }
