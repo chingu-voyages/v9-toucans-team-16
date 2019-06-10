@@ -1,37 +1,170 @@
+// Responsive
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l: 425px;
+$tablet1: 550px;
+$tablet2: 768px; //changed to 768 rom 770
+$desktop1: 1024px; //changed to 1024 from 1025
+$desktop2: 1440px; //changed to 1440 from 1448
+$desktop3: 1600px;
+
+
+@mixin mobile-s {
+  @media (min-width: #{$mobile-s}) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (min-width: #{$mobile-m}) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media (min-width: #{$mobile-l}) {
+    @content;
+  }
+}
+
+@mixin max-desktop {
+    @media (max-width: #{$desktop1}) {
+        @content;
+    }
+}
+
+//Added Extra-small and Large smartphone breakpoints
+
+@mixin tablet1 {
+  @media (min-width: #{$tablet1}) {
+    @content;
+  }
+}
+
+@mixin tablet2 {
+  @media (min-width: #{$tablet2}) {
+    @content;
+  }
+}
+
+@mixin desktop1 {
+  @media (min-width: #{$desktop1}) {
+    @content;
+  }
+}
+
+@mixin desktop2 {
+  @media (min-width: #{$desktop2}) {
+    @content;
+  }
+}
+
+@mixin desktop3 {
+  @media (min-width: #{$desktop3}) {
+    @content;
+  }
+}
+
 .logo {
-    width: 14rem;
-    margin-top: 2rem;
-    margin-left: 1.5rem;
+  width: 14rem;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  @include desktop1 {
+    width: 22rem;
+    height: 6rem;
+    margin-left: 0;
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
 }
 
 .navbar-toggle {
-    font-size: 3rem;
-    color: white;
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 
 .visible-icon {
-    font-size: 3.4rem;
-    position: absolute;
-    right: .5rem;
-    top: 1rem;
+  font-size: 3.4rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
 }
 
 .invisible-icon {
-    font-size: 0 !important;
+  font-size: 0 !important;
 }
 
-.start-btn {
-    height: 5rem;
-    width: 15rem;
-    border-radius: .5rem;
+button {
+  cursor: pointer;
+}
+
+form {
+  width: 15rem;
+  
+}
+
+.login-btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  width: 10rem;
+  
+ 
+
+  @include desktop1 {
+    margin-top: 5rem;
     font-size: 1.6rem;
+    margin-left: 8.5rem;
+    
+    
+    
+  }
+}
+.start-btn {
+  height: 5rem;
+  width: 13rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  color: white;
+  background-color: #5bc399;
+  text-align: center;
+  border: 1px solid black;
+  
+  &:hover {
+    background-color: darken(#5bc399, 8%)
+}
+
+  @include desktop1 {
+    margin-top: 3rem;
     font-weight: 700;
-    margin-top: 2rem;
-    color:white;
-    background-color: #5bc399;
-    text-align: center;
-    border: 1px solid black;
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    border: 1px solid transparent;
+    color: white;
+    -webkit-box-shadow: 10px 10px 105px -16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 105px -16px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 105px -16px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.start-main-btn {
+  width: 20rem;
+  height: 6rem;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  background-color: #5bc399;
+  border: 1px solid transparent;
+  text-align: center;
+  
+  &:hover {
+    background-color: darken(#5bc399, 8%)
+}
 }

@@ -1,520 +1,823 @@
-header {
-    background-image: url("/img/atomist_logo_shapes_banner-home.jpg");
-    background-size: cover;
-    height: 70vh;
-    background-position: bottom;
-}
-.navbar {
-    font-size: 2.2rem;
-    background-size: cover;
-    background-position: left top;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.main-nav {
-    display: none;
-    
-      
-
-
-    li {
-        margin-left: 2rem;
-        margin-top: 3rem;
-        list-style-type: none;
-    }
-    
-}
-
-.nav-links {
-    text-decoration: none;
-    color: white;
-
-}
-
-.active {
-    display: block;
-}
-
-.disable {
-    display: none;
-}
-
-.background-img-toggle {
-    background-image: url("/img/atomist_logo_shapes_banner-product.jpg");
-}
-
-.app-sdm-container {
-    position: absolute;
-    top: 51.5rem;
-}
-
-.app-sdm {
-    width: 100vw;
-    height: 25vh
-}
-
-.login {
-    position: relative;
-    top: 35rem;
-    color: white;
-    margin-left: 2rem;
-
-    p {
-        font-size: 1.6rem;
-    }
-}
-
-.heading {
-    text-align: center;
-    color: white;
-    width: 100vw;
-    position: absolute;
-    top: 13rem;
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 2rem;
-        font-weight: 100;
-        margin-top: 1.5rem;
-    }
-}
-
-// Color Definition 
-$colors: (
-    heading: #2a2a2a,
-    paragraph: #717274,
-    light-paragraph: #9e9eA7,
-    div-bg: #F7F7F7,
-    button-bg: lighten(#43B788, 6%),
-    button-bg-hover: #43B788
-);
-
-@function color($color-name) {
-    @return map-get($colors, $color-name);
-};
-
-// Responsive 
+// Responsive
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l: 425px;
 $tablet1: 550px;
-$tablet2: 770px;
-$desktop1: 1025px;
-$desktop2: 1480px;
+$tablet2: 768px; //changed to 768 rom 770
+$desktop1: 1024px; //changed to 1024 from 1025
+$desktop2: 1440px; //changed to 1440 from 1448
 $desktop3: 1600px;
 
-@mixin tablet1 {
-    @media (min-width: #{$tablet1}) {
-        @content
+@mixin mobile-s {
+  @media (min-width: #{$mobile-s}) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (min-width: #{$mobile-m}) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media (min-width: #{$mobile-l}) {
+    @content;
+  }
+}
+
+@mixin max-desktop {
+    @media (max-width: #{$desktop1}) {
+        @content;
     }
+}
+
+
+//Added Extra-small and Large smartphone breakpoints
+
+@mixin tablet1 {
+  @media (min-width: #{$tablet1}) {
+    @content;
+  }
 }
 
 @mixin tablet2 {
-    @media (min-width: #{$tablet2}) {
-        @content
-    }
+  @media (min-width: #{$tablet2}) {
+    @content;
+  }
 }
 
 @mixin desktop1 {
-    @media (min-width: #{$desktop1}) {
-        @content
-    }
+  @media (min-width: #{$desktop1}) {
+    @content;
+  }
 }
 
 @mixin desktop2 {
-    @media (min-width: #{$desktop2}) {
-        @content
-    }
+  @media (min-width: #{$desktop2}) {
+    @content;
+  }
 }
 
 @mixin desktop3 {
-    @media (min-width: #{$desktop3}) {
-        @content
+  @media (min-width: #{$desktop3}) {
+    @content;
+  }
+}
+
+header {
+  background-image: url("/img/atomist_logo_shapes_banner-home.jpg");
+  background-size: cover;
+  height: 70vh;
+  background-position: bottom;
+
+  @include mobile-s {
+    height: 85vh;
+  }
+
+  @include mobile-m {
+    height: 70vh;
+  }
+
+  @include mobile-l {
+    height: 90vh;
+  }
+
+
+  @include tablet2 {
+      height: 90vh;
+  }
+
+  @include desktop1 {
+    height: 117vh;
+  }
+
+  @include desktop2 {
+    height: 90vh;
+  }
+}
+
+//Navbar
+.navbar {
+  font-size: 1.8rem;
+  background-size: cover;
+  background-position: left top;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  @include desktop1 {
+    display: flex;
+    flex-direction: row;
+    height: 13vh;
+    justify-content: space-around;
+}
+  
+}
+
+
+//Toggle Button
+.navbar-toggle {
+    @include desktop1 {
+        display:none;
+      }
+
+}
+
+.main-nav {
+  display: none;
+
+  @include desktop1 {
+    display: flex;
+    margin-right: 25rem;
+}
+
+  ul {
+    @include desktop1 {
+        display: flex;
+        flex-direction: row;
+        margin-right: 8rem;
+        
+        
+        
+        
     }
+  }
+
+
+  li {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    list-style-type: none;
+    @include desktop1 {
+        margin-left: 0rem;
+        padding-right: 6rem;
+        margin-top: 5rem;
+
+        
+        
+        
+        
+    }
+
+    
+  }
+}
+
+.nav-links {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  display: block;
+}
+
+.disable {
+  display: none;
+}
+
+.background-img-toggle {
+  background-image: url("/img/atomist_logo_shapes_banner-product.jpg");
+}
+
+//Sdm Image Container
+
+.app-sdm-container {
+  position: absolute;
+  top: 51.5rem;
+  width: 100vw;
+
+  @include mobile-s {
+    top: 43rem;
+  }
+
+  @include mobile-m {
+    top: 51.5rem;
+  }
+
+  @include mobile-l {
+      top: 42rem;
+  }
+
+
+  @include desktop1 {
+      top: 45rem;
+  }
+
+}
+
+//Sdm Image
+
+.app-sdm {
+  width: 99vw;
+  height: 25vh;
+
+  @include mobile-s {
+    height: 30vh;
+  }
+
+  @include mobile-m {
+    height: 25vh;
+  }
+
+  @include mobile-l {
+    height: 35vh;
+  }
+
+  @include tablet1 {
+      height: 55vh;
+      display: block;
+      width: 80vw;
+      margin: 0 auto;
+  }
+
+  @include desktop1 {
+    height: 65vh;
+    display: block;
+    width: 60vw;
+    margin: 0 auto;
+
+  }
+
+}
+
+//Login Button
+
+.login {
+  position: relative;
+  top: 35rem;
+  color: white;
+  p {
+      cursor: pointer;
+  }
+
+  @include mobile-s {
+    top: 27rem;
+    margin-left: 1rem;
+  }
+
+  @include mobile-m {
+    top: 40rem;
+    margin-left: 1rem;
+  }
+
+  @include mobile-l {
+      top: 30rem;
+  }
+
+  @include tablet1 {
+      top: 30rem;
+   
+  }
+
+  @include desktop1 {
+      display: flex;
+    justify-content: center;
+      top: 0;
+      position: absolute;
+      margin-left: 47rem;
+  }
+
+}
+
+
+//Heading - "Modernize Delivery & Descriptive Text"
+
+.heading {
+  text-align: center;
+  color: white;
+  width: 100vw;
+  position: absolute;
+  top: 13rem;
+
+
+  @include desktop1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 20rem;
+  }
+
+  }
+
+  h1 {
+    font-size: 3rem; //Needs font change
+
+    @include desktop1 {
+    width: 45vw;
+    font-size: 5rem;
+    line-height: 1.3;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+
+    @include desktop1 {
+        width: 50vw;
+        }
+}
+
+//"Move beyond pipelines" section
+.pipelines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 73.5rem;
+  font-family: "Tofino", "sans-serif"; //To be adjusted
+  text-align: center;
+
+  @include mobile-s {
+    top: 68rem;
+  }
+
+  @include mobile-m {
+    top: 75rem;
+  }
+
+  @include mobile-l {
+      top: 70rem;
+  }
+
+  @include tablet1 {
+      top: 85rem;
+   
+  }
+
+  @include desktop1 {
+      display: flex;
+    justify-content: center;
+      top: 88rem;
+      position: absolute;
+    
+  }
+
+  @include desktop2 {
+    display: flex;
+    justify-content: center;
+      top: 95rem;
+      position: absolute;
+}
+
+  @include max-desktop {
+      z-index: -9999;
+  }
+  
+
+  h3 {
+    font-size: 1.4rem;
+
+    @include desktop1 {
+        font-size: 1.7rem;
+      
+    }
+  }
+  p {
+    line-height: 1.7;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: 100;
+
+    @include desktop1 {
+        font-size: 1.55rem;
+      
+    }
+  }
+}
+
+//Toggle for <br> depending on breakpoints
+.break {
+    @include desktop1 {
+        display:none;
+    }
+}
+
+// Color Definition
+$colors: (
+  heading: #2a2a2a,
+  paragraph: #717274,
+  light-paragraph: #9e9ea7,
+  div-bg: #f7f7f7,
+  button-bg: lighten(#43b788, 6%),
+  button-bg-hover: #43b788
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
 }
 
 // Modern Delivery Platform
 
-.modern-delivery-platform{
-    color: color(heading);
-    margin-top: 40rem;                      // To be adjusted
-    font-family: "Tofino", "sans-serif";    // To be adjusted
-    font-size: 100%;
-    text-align: center;
+.modern-delivery-platform {
+  color: color(heading);
+  font-family: "Tofino", "sans-serif"; // To be adjusted
+  font-size: 100%;
+  text-align: center;
 
-    h2 {
-        font-size: 2.8em;
-        margin-bottom: 0.8em;
+  //Added breakpoints to adjust margin-top in order not to collide with "Move Beyond Pipelines" section
+
+  @include mobile-s {
+    margin-top: 40rem;
+  }
+
+  @include mobile-m {
+    margin-top: 50rem;
+  }
+
+  @include mobile-l {
+    margin-top: 42rem;
+  }
+
+  @include tablet1 {
+    margin-top: 53rem;
+   
+  }
+
+  @include desktop1 {
+      margin-top: 43rem;
+  }
+
+  @include desktop2 {
+    margin-top: 55rem;
+}
+
+  h2 {
+    font-size: 2.8em;
+    margin-bottom: 0.8em;
+  }
+
+  & > div {
+    @include tablet2 {
+      display: grid;
+      grid-column-gap: 0rem;
+      grid-template-columns: 50% 50%;
     }
 
-    &>div{
+    & > div {
+      background-color: color(div-bg);
+      display: inline-block;
+      margin: 1.4em auto;
+      padding: 0 0 4em 0;
+      width: 85%;
 
+      &.left {
         @include tablet2 {
-            display: grid;
-            grid-column-gap: 0rem;
-            grid-template-columns: 50% 50%;
+          margin: 1.5em 1.5em 1.5em auto;
         }
+      }
 
-        &>div {
-            background-color: color(div-bg);
-            display: inline-block;
-            margin: 1.4em auto;
-            padding: 0 0 4em 0;
-            width: 85%;
-
-            &.left {
-                @include tablet2 {
-                    margin: 1.5em 1.5em 1.5em auto;
-                }        
-            }
-
-            &.right {
-                @include tablet2 {
-                    margin: 1.5em auto 1.5em 1.5em;
-                }    
-            }
-
-            img {
-                margin: 0 auto;
-                width: 16em;
-            }
-
-            &>.description {
-                display: inline-block;
-                margin: 0;
-                padding: 0;
-                width: 82%;
-
-                h3 {
-                    font-size: 2em;
-                    font-weight: 500;
-                    margin: 0 auto;  
-                    
-                }
-
-                p {
-                    color: color(paragraph);
-                    font-size: 1.6em;
-                    font-weight: 400;
-                    line-height: 1.9;
-                    margin: 0.6em auto;
-
-                    span {
-                        color: #48bc8d;
-                    }
-                }
-            }
-
-            @include tablet2 {
-                .description {
-                    h3 {
-                        width: 85%;
-                    }
-
-                    p {
-                        width: 88%;
-                    }
-                }
-            }
-
-            @include desktop1 {
-                display: flex;
-                text-align: left;
-
-                .description {
-                    background-color: transparent;
-                    padding-top: 4.5em;
-                    padding-bottom: 2em;
-                    
-                    h3 {
-                        width: 80%;
-                        margin: 0;
-                    }
-
-                    p {
-                        width: 100%;
-                        margin: 0;
-                        padding-top: 1em;
-                        padding-right: 2.8em;
-                    }
-                }
-            }
+      &.right {
+        @include tablet2 {
+          margin: 1.5em auto 1.5em 1.5em;
         }
-    }
+      }
 
-    a {
-        background-color: color(button-bg);
-        border-radius: 0.3em;
-        color: white;
+      img {
+        margin: 0 auto;
+        width: 16em;
+      }
+
+      & > .description {
         display: inline-block;
-        font-size: 1.6em;
-        font-weight: 500;
-        margin-top: 1em;
-        padding: 1.15em 1.95em;
-        text-decoration: none;
-    }
+        margin: 0;
+        padding: 0;
+        width: 82%;
 
-    a:hover {
-        background-color: color(button-bg-hover);
+        h3 {
+          font-size: 2em;
+          font-weight: 500;
+          margin: 0 auto;
+        }
+
+        p {
+          color: color(paragraph);
+          font-size: 1.6em;
+          font-weight: 400;
+          line-height: 1.9;
+          margin: 0.6em auto;
+
+          span {
+            color: #48bc8d;
+          }
+        }
+      }
+
+      @include tablet2 {
+        .description {
+          h3 {
+            width: 85%;
+          }
+
+          p {
+            width: 88%;
+          }
+        }
+      }
+
+      @include desktop1 {
+        display: flex;
+        text-align: left;
+
+        .description {
+          background-color: transparent;
+          padding-top: 4.5em;
+          padding-bottom: 2em;
+
+          h3 {
+            width: 80%;
+            margin: 0;
+          }
+
+          p {
+            width: 100%;
+            margin: 0;
+            padding-top: 1em;
+            padding-right: 2.8em;
+          }
+        }
+      }
     }
+  }
+
+  a {
+    background-color: color(button-bg);
+    border-radius: 0.3em;
+    color: white;
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 500;
+    margin-top: 1em;
+    padding: 1.15em 1.95em;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: color(button-bg-hover);
+  }
 }
 
 // Software Delivery Machine
 
 .software-delivery-machine {
-    color: color(heading);
-    font-family: "Tofino", "sans-serif";
-    margin-top: 12em;
-    margin-bottom: 5em;
+  color: color(heading);
+  font-family: "Tofino", "sans-serif";
+  margin-top: 12em;
+  margin-bottom: 5em;
+
+  @include desktop1 {
+    margin-bottom: 10em;
+  }
+
+  & > h2 {
+    font-size: 2.4em;
+    text-align: center;
+
+    @include tablet1 {
+      font-size: 3em;
+    }
+  }
+
+  & > p {
+    color: color(paragraph);
+    display: block;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0 auto;
+    text-align: center;
+    width: 88%;
 
     @include desktop1 {
-        margin-bottom: 10em;
+      font-size: 1.8em;
+    }
+  }
+
+  & > div {
+    margin: 0 auto;
+    position: relative;
+
+    @include desktop1 {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 6em;
     }
 
-    &>h2 {
-        font-size: 2.4em;
-        text-align: center;
+    @include desktop2 {
+      width: 994px;
+    }
 
-        @include tablet1 {
-            font-size: 3em;
+    img {
+      display: block;
+      margin: 5.5em auto 3.2em auto;
+      width: 92%;
+
+      @include tablet1 {
+        max-width: 506px;
+      }
+
+      @include desktop1 {
+        position: absolute;
+        left: -10em;
+        top: 12.5%;
+        width: 400px;
+        z-index: 1;
+      }
+
+      @include desktop2 {
+        left: -22em;
+        top: 8em;
+        width: 800px;
+      }
+    }
+
+    & > div {
+      background-color: color(div-bg);
+      margin: 0 auto;
+      padding: 1.2em;
+      width: 92%;
+
+      @include tablet2 {
+        width: 78%;
+      }
+
+      @include desktop1 {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      @include desktop2 {
+        max-width: 994px;
+        padding-bottom: 3em;
+      }
+
+      &.chatops-div {
+        @include desktop1 {
+          padding-left: 27em;
         }
-    }
+      }
 
-    &>p {
-        color: color(paragraph);
+      &.event-hub-div {
+        @include desktop1 {
+          padding-left: 32em;
+        }
+      }
+
+      &.cortex-div {
+        @include desktop1 {
+          padding-left: 27em;
+        }
+      }
+
+      i {
         display: block;
-        font-size: 1.6em;
-        font-weight: 400;
-        line-height: 1.7;
-        margin: 0 auto;
-        text-align: center;
-        width: 88%;
-
-        @include desktop1 {
-            font-size: 1.8em;
-        }
-    }
-
-    &>div{
-        margin: 0 auto;
+        font-size: 1.5em;
         position: relative;
+        left: 1.3em;
+        top: 1.3em;
+      }
 
-        @include desktop1 {
-            width: 80%;
-            margin: 0 auto;
-            margin-top: 6em;
+      .command-interface {
+        color: #007bbd;
+      }
+
+      .chatops {
+        color: #5bbcc3;
+      }
+
+      .event-hub {
+        color: #c6dd72;
+      }
+
+      .cortex {
+        color: #227f7e;
+      }
+
+      .integrations {
+        color: #1b2937;
+      }
+
+      div {
+        margin: auto 1.8em 1em 5em;
+
+        h3 {
+          color: color(heading);
+          font-size: 1.8em;
+          font-weight: 500;
+          margin-bottom: 0.3em;
         }
 
-        @include desktop2 {
-            width: 994px;
+        p {
+          color: color(paragraph);
+          font-size: 1.3em;
+          font-weight: 400;
+          line-height: 1.8;
         }
-
-        img {
-            display: block;
-            margin: 5.5em auto 3.2em auto; 
-            width: 92%;
-
-            @include tablet1 {
-                max-width: 506px;
-            }
-
-            @include desktop1 {
-                position: absolute;
-                left: -10em;
-                top: 12.5%;
-                width: 400px;
-                z-index: 1;
-            }
-
-            @include desktop2 {
-                left: -22em;
-                top: 8em;
-                width: 800px;
-            }
-        }
-
-        &>div {
-            background-color: color(div-bg);
-            margin: 0 auto;
-            padding: 1.2em;
-            width: 92%;
-
-            @include tablet2 {
-                width: 78%;
-            }
-
-            @include desktop1 {   
-                width: 100%;            
-                margin: 0 auto;
-            }
-
-            @include desktop2 {
-                max-width: 994px;
-                padding-bottom: 3em;
-            }
-
-            &.chatops-div {
-                @include desktop1 {
-                    padding-left: 27em;
-                }
-            }
-
-            &.event-hub-div {
-                @include desktop1 {
-                    padding-left: 32em;
-                }
-            }
-
-            &.cortex-div {
-                @include desktop1 {
-                    padding-left: 27em;
-                }
-            }
-
-            i {
-                display: block;
-                font-size: 1.5em;
-                position: relative;
-                left: 1.3em;
-                top: 1.3em;
-            }
-
-            .command-interface {
-                color: #007BBD;
-            }
-
-            .chatops {
-                color: #5BBCC3;
-            }
-
-            .event-hub {
-                color: #C6DD72;
-            }
-
-            .cortex {
-                color: #227F7E;
-            }
-
-            .integrations {
-                color: #1B2937;
-            }
-            
-            div {
-                margin: auto 1.8em 1em 5em;
-
-                h3 {
-                    color: color(heading);
-                    font-size: 1.8em;
-                    font-weight: 500;
-                    margin-bottom: 0.3em;
-                }
-
-                p {
-                    color: color(paragraph);
-                    font-size: 1.3em;
-                    font-weight: 400;
-                    line-height: 1.8;
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 // SDM
 
 .sdm {
-    background-color: color(div-bg);
-    font-family: "Tofino", "sans-serif";
-    padding: 4em 0;
+  background-color: color(div-bg);
+  font-family: "Tofino", "sans-serif";
+  padding: 4em 0;
 
-    h2 {
-        color: color(heading);
-        font-size: 2em;
-        font-weight: 400;
-        margin-bottom: 1.5em;
-        text-align: center;
+  h2 {
+    color: color(heading);
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    text-align: center;
 
-        @include desktop1 {
-            margin-top: 1.5em;
-        }
+    @include desktop1 {
+      margin-top: 1.5em;
+    }
+  }
+
+  & > div {
+    @include tablet2 {
+      display: grid;
+      grid-template-columns: 50% 50%;
     }
 
-    &>div {
+    & > div {
+      background-color: white;
+      box-shadow: 3px 3px 15px 13px darken(color(div-bg), 10%);
+      margin: 2.5em auto;
+      padding: 3.5em;
+      width: 88%;
 
+      &.left {
         @include tablet2 {
-            display: grid;
-            grid-template-columns: 50% 50%;
+          margin: 0 1.3em 4.5em auto;
         }
 
-        &>div {
-            background-color: white;
-            box-shadow: 3px 3px 15px 13px darken(color(div-bg), 10%);
-            margin: 2.5em auto;
-            padding: 3.5em;
-            width: 88%;
-
-            &.left {
-                @include tablet2 {
-                    margin: 0 1.3em 4.5em auto;
-                }
-
-                @include desktop3 {
-                    width: 572px;
-                }
-            }
-
-            &.right {
-                @include tablet2 {
-                    margin: 0 auto 4.5em 1.3em;
-                }
-
-                @include desktop3 {
-                    width: 572px;
-                }
-            }
-
-            h3 {
-                font-size: 1.8em;
-                font-weight: 400;
-            }
-
-            p {
-                color: color(light-paragraph);
-                font-size: 1.5em;
-                font-weight: 400;
-                line-height: 1.4;
-                margin-top: 1em;
-            }
-
-            ul {
-                color: color(heading);
-                font-size: 1.4em;
-                font-weight: 400;
-                line-height: 1.5;
-                margin: 1.2em auto 1.8em 2.2em;
-
-                li {
-                    margin: 0.8em auto;
-                }
-            }
-
-            a {
-                background-color: #227A7E;
-                border-radius: 0.3em;
-                color: white;
-                display: inline-block;
-                font-size: 1.3em;
-                font-weight: 500;
-                margin-top: 1.3em;
-                padding: 0.8em 1.8em;
-                text-decoration: none;
-            }
-
-            a:hover {
-                background-color: #1A6362;
-            }
+        @include desktop3 {
+          width: 572px;
         }
+      }
+
+      &.right {
+        @include tablet2 {
+          margin: 0 auto 4.5em 1.3em;
+        }
+
+        @include desktop3 {
+          width: 572px;
+        }
+      }
+
+      h3 {
+        font-size: 1.8em;
+        font-weight: 400;
+      }
+
+      p {
+        color: color(light-paragraph);
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 1em;
+      }
+
+      ul {
+        color: color(heading);
+        font-size: 1.4em;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 1.2em auto 1.8em 2.2em;
+
+        li {
+          margin: 0.8em auto;
+        }
+      }
+
+      a {
+        background-color: #227a7e;
+        border-radius: 0.3em;
+        color: white;
+        display: inline-block;
+        font-size: 1.3em;
+        font-weight: 500;
+        margin-top: 1.3em;
+        padding: 0.8em 1.8em;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: #1a6362;
+      }
     }
+  }
 }
