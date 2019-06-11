@@ -6,36 +6,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: "Tofino";
-    src: url("/font/Tofino-Book.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Tofino";
-    src: url("/font/Tofino-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Tofino";
-    src: url("/font/Tofino-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Tofino";
-    src: url("/font/Tofino-Semibold.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-}
-
-html {
-    font-size: 62.5%;
-}
-
 body {
     box-sizing: border-box;
-    font-family: "Tofino", "sans-serif";
 }

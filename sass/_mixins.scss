@@ -1,0 +1,57 @@
+@mixin mobile-s {
+    @media (min-width: #{$mobile-s}) {
+      @content;
+    }
+  }
+  
+  @mixin mobile-m {
+    @media (min-width: #{$mobile-m}) {
+      @content;
+    }
+  }
+  
+  @mixin mobile-l {
+    @media (min-width: #{$mobile-l}) {
+      @content;
+    }
+  }
+  
+  @mixin max-desktop {
+      @media (max-width: #{$desktop1}) {
+          @content;
+      }
+  }
+  
+  
+  //Added Extra-small and Large smartphone breakpoints
+  
+  @mixin tablet1 {
+    @media (min-width: #{$tablet1}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet2 {
+    @media (min-width: #{$tablet2}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop1 {
+    @media (min-width: #{$desktop1}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop2 {
+    @media (min-width: #{$desktop2}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop3 {
+    @media (min-width: #{$desktop3}) {
+      @content;
+    }
+  }
+  
