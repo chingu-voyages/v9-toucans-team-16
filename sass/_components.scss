@@ -2,7 +2,7 @@
   width: 14rem;
   margin-top: 2rem;
   margin-left: 1.5rem;
-  @include desktop1 {
+  @include desktop-s {
     width: 22rem;
     height: 6rem;
     margin-left: 0;
@@ -47,7 +47,7 @@ form {
   
  
 
-  @include desktop1 {
+  @include desktop-s {
     margin-top: 5rem;
     font-size: 1.6rem;
     margin-left: 8.5rem;
@@ -72,7 +72,7 @@ form {
     background-color: darken(#5bc399, 8%)
 }
 
-  @include desktop1 {
+  @include desktop-s {
     margin-top: 3rem;
     font-weight: 700;
     font-size: 1.5rem;
