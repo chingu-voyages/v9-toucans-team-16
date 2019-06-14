@@ -29,7 +29,7 @@ header {
   }
 
   @include desktop-m {
-    height: 110vh;
+    height: 85vh;
   }
 
 
@@ -358,6 +358,12 @@ header {
   }
 }
 
+.break-desktop-m {
+  @include desktop-s {
+    display: block;
+  }
+}
+
 .break-desktop {
   @include max-desktop {
       display:none;
@@ -396,7 +402,7 @@ header {
   }
 
   @include desktop-m {
-    margin-top: 40rem;
+    margin-top: 50rem;
 }
 
   h2 {
