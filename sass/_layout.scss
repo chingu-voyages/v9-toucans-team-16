@@ -322,7 +322,7 @@ header {
     display: flex;
     justify-content: center;
       position: absolute;
-      margin-top: 85rem;
+      margin-top: 75rem;
 }
 
   @include max-desktop {
@@ -402,7 +402,7 @@ header {
   }
 
   @include desktop-m {
-    margin-top: 40rem;
+    margin-top: 50rem;
 }
 
   h2 {

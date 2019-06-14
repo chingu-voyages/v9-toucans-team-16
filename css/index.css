@@ -343,7 +343,7 @@ header {
       display: flex;
       justify-content: center;
       position: absolute;
-      margin-top: 85rem; } }
+      margin-top: 75rem; } }
   @media (max-width: 1025px) {
     .pipelines {
       z-index: -9999; } }
@@ -395,7 +395,7 @@ header {
       margin-top: 43rem; } }
   @media (min-width: 1440px) {
     .modern-delivery-platform {
-      margin-top: 40rem; } }
+      margin-top: 50rem; } }
   .modern-delivery-platform h2 {
     font-size: 2.8em;
     margin-bottom: 0.8em; }
