@@ -144,7 +144,7 @@ header {
       height: 120vh; } }
   @media (min-width: 1440px) {
     header {
-      height: 110vh; } }
+      height: 85vh; } }
 
 .navbar {
   font-size: 1.8rem;
@@ -343,7 +343,7 @@ header {
       display: flex;
       justify-content: center;
       position: absolute;
-      margin-top: 75rem; } }
+      margin-top: 85rem; } }
   @media (max-width: 1025px) {
     .pipelines {
       z-index: -9999; } }
@@ -364,6 +364,10 @@ header {
 @media (min-width: 1025px) {
   .break {
     display: none; } }
+
+@media (min-width: 1025px) {
+  .break-desktop-m {
+    display: block; } }
 
 @media (max-width: 1025px) {
   .break-desktop {

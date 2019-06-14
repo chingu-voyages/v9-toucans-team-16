@@ -29,7 +29,7 @@ header {
   }
 
   @include desktop-m {
-    height: 110vh;
+    height: 85vh;
   }
 
 
@@ -322,7 +322,7 @@ header {
     display: flex;
     justify-content: center;
       position: absolute;
-      margin-top: 75rem;
+      margin-top: 85rem;
 }
 
   @include max-desktop {
@@ -355,6 +355,12 @@ header {
 .break {
   @include desktop-s {
       display:none;
+  }
+}
+
+.break-desktop-m {
+  @include desktop-s {
+    display: block;
   }
 }
 
