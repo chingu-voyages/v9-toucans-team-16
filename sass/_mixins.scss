@@ -9,15 +9,23 @@
       @content;
     }
   }
+
+
+  @mixin iphone-x {
+    @media (min-height: #{$iphone-x}) and (min-width: #{$mobile-m}) {
+      @content;
+    }
+  }
   
   @mixin mobile-l {
     @media (min-width: #{$mobile-l}) {
       @content;
     }
   }
+
   
   @mixin max-desktop {
-      @media (max-width: #{$desktop1}) {
+      @media (max-width: #{$desktop-s}) {
           @content;
       }
   }
@@ -33,6 +41,13 @@
   
   @mixin tablet-l {
     @media (min-width: #{$tablet-l}) {
+      @content;
+    }
+  }
+
+
+  @mixin ipad-pro {
+    @media (min-height: #{$ipad-pro}) and (min-width: #{$tablet-l}) {
       @content;
     }
   }
