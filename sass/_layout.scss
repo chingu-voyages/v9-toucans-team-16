@@ -238,7 +238,6 @@ header {
       top: 20rem;
   }
 
-  }
 
   h1 {
     font-size: 3rem; //Needs font change
@@ -258,6 +257,8 @@ header {
     @include desktop-s {
         width: 50vw;
         }
+  }
+  
 }
 
 //"Move beyond pipelines" section

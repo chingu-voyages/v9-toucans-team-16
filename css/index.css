@@ -283,22 +283,20 @@ header {
       align-items: center;
       position: absolute;
       top: 20rem; } }
-
-h1 {
-  font-size: 3rem; }
-  @media (min-width: 1024px) {
-    h1 {
-      width: 45vw;
-      font-size: 5rem;
-      line-height: 1.3; } }
-
-p {
-  font-size: 2rem;
-  font-weight: 100;
-  margin-top: 1.5rem; }
-  @media (min-width: 1024px) {
-    p {
-      width: 50vw; } }
+  .heading h1 {
+    font-size: 3rem; }
+    @media (min-width: 1024px) {
+      .heading h1 {
+        width: 45vw;
+        font-size: 5rem;
+        line-height: 1.3; } }
+  .heading p {
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 1.5rem; }
+    @media (min-width: 1024px) {
+      .heading p {
+        width: 50vw; } }
 
 .pipelines {
   display: flex;
