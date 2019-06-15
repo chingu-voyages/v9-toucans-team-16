@@ -706,3 +706,46 @@ header {
       text-decoration: none; }
     .sdm > div > div a:hover {
       background-color: #1a6362; }
+
+.subscribe {
+  background: url("/img/CTA-banner-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .subscribe {
+      padding-bottom: 8em; } }
+  .subscribe h2 {
+    font-size: 2.4em;
+    font-weight: 500;
+    line-height: 1em; }
+    @media (min-width: 768px) {
+      .subscribe h2 {
+        font-size: 3.2em; } }
+  .subscribe p {
+    display: block;
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 1em auto;
+    width: 85%; }
+    @media (min-width: 1025px) {
+      .subscribe p {
+        margin-top: 2.3em; } }
+  .subscribe a {
+    background-color: #57c296;
+    border-radius: 0.3em;
+    color: white;
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin-top: 1em;
+    padding: 1.15em 1.95em;
+    text-decoration: none; }
+  .subscribe a:hover {
+    background-color: #43b788; }
