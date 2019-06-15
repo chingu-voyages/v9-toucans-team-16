@@ -29,11 +29,11 @@ header {
   }
 
   @include desktop-m {
-    height: 85vh;
+    height: 70vh;
   }
 
   @include desktop-l {
-    height: 80vh;
+    height: 70vh;
   }
 
 
@@ -155,7 +155,7 @@ header {
 //Sdm Image
 
 .app-sdm {
-  width: 99vw;
+  width: 100vw;
   height: 25vh;
 
   @include mobile-s {
@@ -314,11 +314,15 @@ header {
   }
 
   @include tablet-l {
-    margin-top: -17rem ;
+    margin-top: -18rem ;
    
   }
 @include ipad-pro {
   margin-top: -37rem;
+}
+
+@include desktop-1024 {
+  margin-top: -32rem;
 }
   @include desktop-s {
       display: flex;
@@ -332,7 +336,7 @@ header {
     display: flex;
     justify-content: center;
       position: absolute;
-      margin-top: 68rem;
+      margin-top: 85rem;
 }
 
 @include desktop-l {
@@ -423,7 +427,7 @@ header {
 }
 
 @include desktop-l {
-  margin-top: 35rem;
+  margin-top: 45rem;
 }
 
   h2 {
