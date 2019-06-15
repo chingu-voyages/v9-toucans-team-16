@@ -52,6 +52,12 @@
     }
   }
   
+  @mixin desktop-1024 {
+    @media (min-height: #{$desktop-1288-height}) and (min-width: #{$desktop-1024-width}) {
+      @content;
+    }
+  }
+
   @mixin desktop-s {
     @media (min-width: #{$desktop-s}) {
       @content;
