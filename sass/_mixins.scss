@@ -45,7 +45,11 @@
     }
   }
 
-
+@mixin ipad {
+  @media (min-height: #{$desktop-1024-width}) and (min-width: #{$tablet-l}) {
+    @content;
+  }
+}
   @mixin ipad-pro {
     @media (min-height: #{$ipad-pro}) and (min-width: #{$tablet-l}) {
       @content;
@@ -58,6 +62,7 @@
     }
   }
 
+
   @mixin desktop-s {
     @media (min-width: #{$desktop-s}) {
       @content;
@@ -69,9 +74,21 @@
       @content;
     }
   }
+
+  @mixin desktop-1440 {
+    @media (max-height: #{$desktop-712-height}) and (min-width: #{$desktop-m}) {
+      @content;
+    }
+  }
   
   @mixin desktop-l {
     @media (min-width: #{$desktop-l}) {
+      @content;
+    }
+  }
+
+  @mixin desktop-4k {
+    @media (min-height: #{$desktop-4k-height}) and (min-width: #{$desktop-4k-width}) {
       @content;
     }
   }

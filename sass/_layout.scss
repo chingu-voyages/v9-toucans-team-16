@@ -12,7 +12,11 @@ header {
   }
 
   @include mobile-m {
-    height: 70vh;
+    height: 85vh;
+  }
+
+  @include iphone-x {
+    height: 80vh;
   }
 
   @include mobile-l {
@@ -29,11 +33,15 @@ header {
   }
 
   @include desktop-m {
-    height: 70vh;
+    height: 80vh;
   }
 
   @include desktop-l {
     height: 70vh;
+  }
+
+  @include desktop-4k {
+    height: 58vh;
   }
 
 
@@ -163,7 +171,7 @@ header {
   }
 
   @include mobile-m {
-    height: 25vh;
+    height: 35vh;
   }
 
   @include mobile-l {
@@ -192,10 +200,10 @@ header {
     margin: 0 auto;
   }
 
-  @include desktop-m {
-    height: 42vh;
+  @include desktop-4k {
+    height: 40vh;
     display: block;
-    width: 50vw;
+    width: 60vw;
     margin: 0 auto;
   }
 
@@ -302,35 +310,35 @@ header {
   }
 
   @include mobile-m {
-    margin-top: -8rem;
-  }
-
-  @include mobile-l {
     margin-top: -3rem;
   }
 
+  @include mobile-l {
+    margin-top: -4rem;
+  }
+
   @include iphone-x {
-    margin-top: -20rem;
+    margin-top: -10rem;
   }
 
   @include tablet-l {
-    margin-top: -18rem ;
+    margin-top: 1rem ;
    
+  }
+
+  @include ipad{
+    margin-top: -17rem;
   }
 @include ipad-pro {
   margin-top: -37rem;
 }
 
-@include desktop-1024 {
-  margin-top: -32rem;
+@include desktop-s {
+  display: flex;
+  justify-content: center;
+    position: absolute;
+    margin-top: 82rem;
 }
-  @include desktop-s {
-      display: flex;
-    justify-content: center;
-      position: absolute;
-      margin-top: 80rem;
-    
-  }
 
   @include desktop-m {
     display: flex;
@@ -339,11 +347,25 @@ header {
       margin-top: 85rem;
 }
 
+@include desktop-1440 {
+  display: flex;
+    justify-content: center;
+      position: absolute;
+      margin-top: 73rem;
+}
+
 @include desktop-l {
   display: flex;
   justify-content: center;
     position: absolute;
-    margin-top: 80rem;
+    margin-top: 90rem;
+}
+
+@include desktop-4k {
+  display: flex;
+  justify-content: center;
+    position: absolute;
+    margin-top: 110rem;
 }
 
   @include max-desktop {
@@ -418,6 +440,10 @@ header {
    
   }
 
+  @include tablet-l {
+    margin-top: 55rem;
+  }
+
   @include desktop-s {
       margin-top: 43rem;
   }
@@ -427,7 +453,7 @@ header {
 }
 
 @include desktop-l {
-  margin-top: 45rem;
+  margin-top: 60rem;
 }
 
   h2 {
