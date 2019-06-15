@@ -1,3 +1,5 @@
+@import "variables";
+@import "mixins";
 .logo {
   width: 14rem;
   margin-top: 2rem;
@@ -16,7 +18,9 @@
   color: white;
   position: absolute;
   top: 1rem;
-  right: 2rem;
+  right: 2.5rem;
+
+
 }
 
 .visible-icon {
