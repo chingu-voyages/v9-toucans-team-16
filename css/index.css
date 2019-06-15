@@ -669,17 +669,29 @@ header {
   background-size: cover;
   background-position: center center;
   color: white;
-  padding-top: 5.5em;
-  padding-bottom: 7em;
+  padding-top: 6em;
+  padding-bottom: 6em;
   text-align: center; }
+  @media (min-width: 768px) {
+    .subscribe {
+      padding-bottom: 8em; } }
   .subscribe h2 {
     font-size: 2.4em;
     font-weight: 500;
     line-height: 1em; }
+    @media (min-width: 768px) {
+      .subscribe h2 {
+        font-size: 3.2em; } }
   .subscribe p {
+    display: block;
     font-size: 1.6em;
     font-weight: 400;
-    line-height: 3em; }
+    line-height: 1.5em;
+    margin: 1em auto;
+    width: 85%; }
+    @media (min-width: 1025px) {
+      .subscribe p {
+        margin-top: 2.3em; } }
   .subscribe a {
     background-color: #57c296;
     border-radius: 0.3em;
