@@ -11,6 +11,10 @@
     margin-right: 2rem;
     margin-top: 3rem;
   }
+  
+@include mobile-landscape {
+  margin-left: 5rem;
+}
 }
 
 .navbar-toggle {

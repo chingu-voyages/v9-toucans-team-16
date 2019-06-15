@@ -50,6 +50,9 @@ body {
       margin-left: 0;
       margin-right: 2rem;
       margin-top: 3rem; } }
+  @media (orientation: landscape) and (max-width: 900px) {
+    .logo {
+      margin-left: 5rem; } }
 
 .navbar-toggle {
   font-size: 3rem;
@@ -155,6 +158,9 @@ header {
   @media (min-height: 2172px) and (min-width: 2560px) {
     header {
       height: 58vh; } }
+  @media (orientation: landscape) and (max-width: 900px) {
+    header {
+      height: 130vh; } }
 
 .navbar {
   font-size: 1.8rem;
@@ -224,6 +230,9 @@ header {
   @media (min-width: 1025px) {
     .app-sdm-container {
       top: 45rem; } }
+  @media (orientation: landscape) and (max-width: 900px) {
+    .app-sdm-container {
+      top: 37rem; } }
 
 .app-sdm {
   width: 100vw;
@@ -261,6 +270,10 @@ header {
       display: block;
       width: 60vw;
       margin: 0 auto; } }
+  @media (orientation: landscape) and (max-width: 900px) {
+    .app-sdm {
+      height: 70vh;
+      width: 70vw; } }
 
 .login {
   position: relative;
@@ -305,6 +318,9 @@ header {
       align-items: center;
       position: absolute;
       top: 20rem; } }
+  @media (orientation: landscape) and (max-width: 900px) {
+    .heading {
+      top: 10rem; } }
   .heading h1 {
     font-size: 3rem; }
     @media (min-width: 1025px) {
@@ -381,6 +397,9 @@ header {
       justify-content: center;
       position: absolute;
       margin-top: 110rem; } }
+  @media (orientation: landscape) and (max-width: 900px) {
+    .pipelines {
+      margin-top: 30rem; } }
   @media (max-width: 1025px) {
     .pipelines {
       z-index: -9999; } }
