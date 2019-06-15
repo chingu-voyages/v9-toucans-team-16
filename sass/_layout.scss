@@ -44,7 +44,9 @@ header {
     height: 58vh;
   }
 
-
+@include mobile-landscape {
+  height: 130vh;
+}
 
 }
 
@@ -157,6 +159,9 @@ header {
   }
 
 
+  @include mobile-landscape {
+    top: 37rem;
+  }
 
 }
 
@@ -207,6 +212,11 @@ header {
     margin: 0 auto;
   }
 
+
+@include mobile-landscape {
+  height: 70vh;
+  width: 70vw;
+}
 }
 
 //Login Button
@@ -270,6 +280,10 @@ header {
       top: 20rem;
   }
 
+
+@include mobile-landscape {
+  top: 10rem;
+}
 
   h1 {
     font-size: 3rem; //Needs font change
@@ -366,6 +380,11 @@ header {
   justify-content: center;
     position: absolute;
     margin-top: 110rem;
+}
+
+
+@include mobile-landscape {
+  margin-top: 30rem;
 }
 
   @include max-desktop {

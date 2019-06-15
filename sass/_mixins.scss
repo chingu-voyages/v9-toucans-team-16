@@ -93,3 +93,8 @@
     }
   }
   
+  @mixin mobile-landscape {
+    @media (orientation: landscape) and (max-width: 900px) {
+      @content;
+    }
+  }
