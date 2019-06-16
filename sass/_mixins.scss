@@ -29,6 +29,12 @@
           @content;
       }
   }
+
+  @mixin min-desktop {
+    @media (min-width: #{$desktop-1024-width}) {
+      @content;
+    }
+  }
   
   
   //Added Extra-small and Large smartphone breakpoints

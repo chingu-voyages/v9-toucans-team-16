@@ -107,3 +107,72 @@ form {
     background-color: darken(#5bc399, 8%)
 }
 }
+
+.latest-img {
+  height: 25vh;
+  width: 90vw;
+  object-fit: cover;
+  object-position: 0 0%;
+  -webkit-box-shadow: 7px 10px 52px 23px rgba(0,0,0,0.07);
+  -moz-box-shadow: 7px 10px 52px 23px rgba(0,0,0,0.07);
+  box-shadow: 7px 10px 52px 23px rgba(0,0,0,0.07);
+border: 2px solid white;
+align-self: center;
+
+@include min-desktop {
+  width: 15vw;
+  height: 15vh;
+  object-position: 50% 50%;
+  margin-bottom: 0rem;
+  
+}
+
+@include desktop-s {
+  width: 15vw;
+  height: 30vh;
+  object-position: 50% 50%;
+  margin-bottom: 0rem;
+  
+}
+
+@include desktop-m {
+  height: 20vh;
+}
+
+@include desktop-1440 {
+  height: 30vh;
+}
+
+@include ipad-pro {
+  height: 25vh;
+  width: 90vw;
+  object-fit: cover;
+  object-position: 0 0%;
+}
+}
+
+.read-btn {
+  font-size: 1.7rem;
+  font-weight: 100;
+  height: 5rem;
+  width: 13rem;
+  color: #43b788;
+  border-radius: .7rem;
+  background-color: white;
+  border: 2px solid #43b788;
+  margin: 2rem 2rem;
+
+  &:hover {
+    background-color: #43b788;
+    color: white;
+  }
+
+  @include min-desktop  {
+    margin-left: 5rem;
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.3rem;
+
+
+  }
+}
