@@ -846,6 +846,148 @@ header {
   }
 }
 
+//The Latest From Atomist
+
+.latest {
+  @include min-desktop {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  @include desktop-l {
+    margin-left: 40rem;
+    margin-right: 40rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 2rem 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: .05rem solid #9e9ea7;
+
+    @include min-desktop {
+      font-size: 2rem;
+      margin: 0 2rem;
+
+  
+    }
+
+
+
+    @include desktop-s {
+      font-size: 2rem;
+      margin: 0 -2rem;
+    }
+
+    @include desktop-l {
+      margin: 0 2rem;
+    }
+
+    @include ipad-pro {
+      margin: 2rem 2.5rem;
+      font-size: 2.5rem;
+
+    }
+
+    
+
+  }
+}
+.latest-list {
+  list-style-type: none;
+
+  li {
+    margin-bottom: 5rem;
+
+    &:last-child {
+      margin-bottom: 15rem;
+    }
+  }
+  
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+
+ 
+    
+    @include min-desktop {
+      flex-direction: row;
+
+      
+    }
+
+    @include ipad-pro {
+      flex-direction: column;
+    }
+    div {
+      align-self: center;
+    }
+
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 2.5rem;
+
+    @include min-desktop {
+      font-size: 2rem;
+
+  
+    }
+  }
+  h4, p {
+    margin: 0 2.5rem;
+
+    @include min-desktop {
+      margin-left: 5rem;
+
+  
+    }
+
+
+    
+  
+  }
+
+  p {
+    line-height: 1.7;
+    font-size: 1.9rem;
+    margin-top: 1rem;
+    color: #717274;
+
+    @include min-desktop {
+      font-size: 1.5rem;
+      margin-top: .5rem;
+  
+    }
+
+    
+  }
+
+  .posted {
+    margin-top: 3.5rem !important;
+    margin: 2rem 2.5rem;
+    font-size: 1.7rem;
+    color: #717274;
+    font-weight: 100;
+    @include min-desktop {
+      margin-left: 5rem;
+      font-size: 1.5rem;
+      margin-bottom: .5rem !important;
+  
+    }
+
+  
+  }
+}
+
 // Subscribe
 .subscribe {
   background: url("/img/CTA-banner-texture.jpg");
