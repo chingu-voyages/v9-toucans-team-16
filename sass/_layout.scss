@@ -20,9 +20,8 @@ header {
     height: 80vh;
   }
 
-
   @include tablet-l {
-      height: 65vh;
+    height: 65vh;
   }
 
   @include desktop-s {
@@ -41,10 +40,9 @@ header {
     height: 58vh;
   }
 
-@include mobile-landscape {
-  height: 130vh;
-}
-
+  @include mobile-landscape {
+    height: 130vh;
+  }
 }
 
 //Navbar
@@ -61,17 +59,14 @@ header {
     flex-direction: row;
     height: 13vh;
     justify-content: space-around;
+  }
 }
-  
-}
-
 
 //Toggle Button
 .navbar-toggle {
-    @include desktop-s {
-        display:none;
-      }
-
+  @include desktop-s {
+    display: none;
+  }
 }
 
 .main-nav {
@@ -80,37 +75,25 @@ header {
   @include desktop-s {
     display: flex;
     margin-right: 25rem;
-}
+  }
 
   ul {
     @include desktop-s {
-        display: flex;
-        flex-direction: row;
-        margin-right: 8rem;
-        
-        
-        
-        
+      display: flex;
+      flex-direction: row;
+      margin-right: 8rem;
     }
   }
-
 
   li {
     margin-left: 2rem;
     margin-top: 3rem;
     list-style-type: none;
     @include desktop-s {
-        margin-left: 0rem;
-        padding-right: 6rem;
-        margin-top: 5rem;
-
-        
-        
-        
-        
+      margin-left: 0rem;
+      padding-right: 6rem;
+      margin-top: 5rem;
     }
-
-    
   }
 }
 
@@ -147,19 +130,16 @@ header {
   }
 
   @include mobile-l {
-      top: 42rem;
+    top: 42rem;
   }
-
 
   @include desktop-s {
-      top: 45rem;
+    top: 45rem;
   }
-
 
   @include mobile-landscape {
     top: 37rem;
   }
-
 }
 
 //Sdm Image
@@ -181,10 +161,10 @@ header {
   }
 
   @include tablet-s {
-      height: 40vh;
-      display: block;
-      width: 80vw;
-      margin: 0 auto;
+    height: 40vh;
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
   }
 
   @include desktop-s {
@@ -192,7 +172,6 @@ header {
     display: block;
     width: 60vw;
     margin: 0 auto;
-
   }
 
   @include desktop-m {
@@ -209,11 +188,10 @@ header {
     margin: 0 auto;
   }
 
-
-@include mobile-landscape {
-  height: 70vh;
-  width: 70vw;
-}
+  @include mobile-landscape {
+    height: 70vh;
+    width: 70vw;
+  }
 }
 
 //Login Button
@@ -223,7 +201,7 @@ header {
   top: 35rem;
   color: white;
   p {
-      cursor: pointer;
+    cursor: pointer;
   }
 
   @include mobile-s {
@@ -237,24 +215,21 @@ header {
   }
 
   @include mobile-l {
-      top: 30rem;
+    top: 30rem;
   }
 
   @include tablet-s {
-      top: 30rem;
-   
+    top: 30rem;
   }
 
   @include desktop-s {
-      display: flex;
+    display: flex;
     justify-content: center;
-      top: 0;
-      position: absolute;
-      margin-left: 47rem;
+    top: 0;
+    position: absolute;
+    margin-left: 47rem;
   }
-
 }
-
 
 //Heading - "Modernize Delivery & Descriptive Text"
 
@@ -265,30 +240,27 @@ header {
   position: absolute;
   top: 13rem;
 
-
-
   @include desktop-s {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 20rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20rem;
   }
 
-
-@include mobile-landscape {
-  top: 10rem;
-}
+  @include mobile-landscape {
+    top: 10rem;
+  }
 
   h1 {
     font-size: 3rem; //Needs font change
 
     @include desktop-s {
-    width: 45vw;
-    font-size: 5rem;
-    line-height: 1.3;
+      width: 45vw;
+      font-size: 5rem;
+      line-height: 1.3;
     }
   }
 
@@ -298,10 +270,9 @@ header {
     margin-top: 1.5rem;
 
     @include desktop-s {
-        width: 50vw;
-        }
+      width: 50vw;
+    }
   }
-  
 }
 
 //"Move beyond pipelines" section
@@ -317,7 +288,7 @@ header {
   text-align: center;
 
   @include mobile-s {
-   margin-top: 5rem;
+    margin-top: 5rem;
   }
 
   @include mobile-m {
@@ -333,68 +304,64 @@ header {
   }
 
   @include tablet-l {
-    margin-top: 1rem ;
-   
+    margin-top: 1rem;
   }
 
-  @include ipad{
+  @include ipad {
     margin-top: -17rem;
   }
-@include ipad-pro {
-  margin-top: -37rem;
-}
+  @include ipad-pro {
+    margin-top: -37rem;
+  }
 
-@include desktop-s {
-  display: flex;
-  justify-content: center;
+  @include desktop-s {
+    display: flex;
+    justify-content: center;
     position: absolute;
     margin-top: 82rem;
-}
+  }
 
   @include desktop-m {
     display: flex;
     justify-content: center;
-      position: absolute;
-      margin-top: 85rem;
-}
+    position: absolute;
+    margin-top: 85rem;
+  }
 
-@include desktop-1440 {
-  display: flex;
+  @include desktop-1440 {
+    display: flex;
     justify-content: center;
-      position: absolute;
-      margin-top: 73rem;
-}
+    position: absolute;
+    margin-top: 73rem;
+  }
 
-@include desktop-l {
-  display: flex;
-  justify-content: center;
+  @include desktop-l {
+    display: flex;
+    justify-content: center;
     position: absolute;
     margin-top: 90rem;
-}
+  }
 
-@include desktop-4k {
-  display: flex;
-  justify-content: center;
+  @include desktop-4k {
+    display: flex;
+    justify-content: center;
     position: absolute;
     margin-top: 110rem;
-}
+  }
 
-
-@include mobile-landscape {
-  margin-top: 30rem;
-}
+  @include mobile-landscape {
+    margin-top: 30rem;
+  }
 
   @include max-desktop {
-      z-index: -9999;
+    z-index: -9999;
   }
-  
 
   h3 {
     font-size: 1.4rem;
 
     @include desktop-s {
-        font-size: 1.7rem;
-      
+      font-size: 1.7rem;
     }
   }
   p {
@@ -404,8 +371,7 @@ header {
     font-weight: 100;
 
     @include desktop-s {
-        font-size: 1.55rem;
-      
+      font-size: 1.55rem;
     }
   }
 }
@@ -413,7 +379,7 @@ header {
 //Toggle for <br> depending on breakpoints
 .break {
   @include desktop-s {
-      display:none;
+    display: none;
   }
 }
 
@@ -425,7 +391,7 @@ header {
 
 .break-desktop {
   @include max-desktop {
-      display:none;
+    display: none;
   }
 }
 
@@ -453,7 +419,6 @@ header {
 
   @include tablet-s {
     margin-top: 47rem;
-   
   }
 
   @include tablet-l {
@@ -461,20 +426,22 @@ header {
   }
 
   @include desktop-s {
-      margin-top: 43rem;
+    margin-top: 43rem;
   }
 
   @include desktop-m {
     margin-top: 50rem;
-}
+  }
 
-@include desktop-l {
-  margin-top: 60rem;
-}
+  @include desktop-l {
+    margin-top: 60rem;
+  }
 
   h2 {
+    display: block;
     font-size: 2.8em;
-    margin-bottom: 0.8em;
+    margin: 0 auto 0.8em auto;
+    width: 90%;
   }
 
   & > div {
@@ -862,16 +829,12 @@ header {
     font-weight: 500;
     margin: 2rem 2.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: .05rem solid #9e9ea7;
+    border-bottom: 0.05rem solid #9e9ea7;
 
     @include min-desktop {
       font-size: 2rem;
       margin: 0 2rem;
-
-  
     }
-
-
 
     @include desktop-s {
       font-size: 2rem;
@@ -883,13 +846,10 @@ header {
     }
 
     @include ipad-pro {
-      margin: 2rem 2.5rem;
+      margin: 2rem -10rem;
+      margin-bottom: 10rem;
       font-size: 2.5rem;
-
     }
-
-    
-
   }
 }
 .latest-list {
@@ -902,7 +862,6 @@ header {
       margin-bottom: 15rem;
     }
   }
-  
 
   a {
     display: flex;
@@ -913,12 +872,8 @@ header {
     text-decoration: none;
     font-size: 2rem;
 
- 
-    
     @include min-desktop {
       flex-direction: row;
-
-      
     }
 
     @include ipad-pro {
@@ -927,7 +882,6 @@ header {
     div {
       align-self: center;
     }
-
   }
 
   h4 {
@@ -936,22 +890,15 @@ header {
 
     @include min-desktop {
       font-size: 2rem;
-
-  
     }
   }
-  h4, p {
+  h4,
+  p {
     margin: 0 2.5rem;
 
     @include min-desktop {
       margin-left: 5rem;
-
-  
     }
-
-
-    
-  
   }
 
   p {
@@ -962,13 +909,26 @@ header {
 
     @include min-desktop {
       font-size: 1.5rem;
-      margin-top: .5rem;
-  
+      margin-top: 0.5rem;
     }
-
-    
   }
 
+  .latest-link-desc {
+    align-self: flex-start;
+
+    @include ipad {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    }
+
+    @include ipad-pro {
+      margin-left: -8rem;
+      margin-right: -8rem;
+      }
+
+
+  }
+  }
   .posted {
     margin-top: 3.5rem !important;
     margin: 2rem 2.5rem;
@@ -978,12 +938,8 @@ header {
     @include min-desktop {
       margin-left: 5rem;
       font-size: 1.5rem;
-      margin-bottom: .5rem !important;
-  
+      margin-bottom: 0.5rem !important;
     }
-
-  
-  }
 }
 
 // Subscribe
@@ -1009,7 +965,6 @@ header {
     @include tablet-l {
       font-size: 3.2em;
     }
-
   }
 
   p {
@@ -1066,11 +1021,11 @@ footer {
     @include desktop-s {
       grid-template-columns: auto 25em auto;
     }
-    
+
     div > a {
       color: #858585;
       display: block;
-      
+
       font-size: 1.6em;
       font-weight: 400;
       padding-bottom: 2em;
@@ -1079,7 +1034,7 @@ footer {
 
     .left {
       text-align: center;
-      
+
       @include mobile-s {
         margin-left: 1em;
         text-align: right;
@@ -1101,7 +1056,6 @@ footer {
   }
 
   .social-media {
-    
     margin: 0 auto 3.5em auto;
     text-align: center;
 
@@ -1117,14 +1071,13 @@ footer {
     color: #858585;
     display: block;
     font-size: 1.4em;
-    line-height: 2em; 
+    line-height: 2em;
     margin: 0 auto;
     text-align: center;
     width: 80%;
   }
 
   .term-privacy {
-
     margin: 3em auto 10em auto;
     text-align: center;
 
@@ -1136,8 +1089,7 @@ footer {
 
     span {
       color: #858585;
-      font-size: 1.8em; 
+      font-size: 1.8em;
     }
-    
   }
 }
