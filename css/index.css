@@ -156,8 +156,8 @@ form {
       height: 30vh; } }
   @media (min-height: 1366px) and (min-width: 768px) {
     .latest-img {
-      height: 25vh;
-      width: 90vw;
+      height: 15vh;
+      width: 80vw;
       object-fit: cover;
       object-position: 0 0%; } }
 
@@ -779,7 +779,7 @@ header {
   font-weight: 500;
   margin: 2rem 2.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: .05rem solid #9e9ea7; }
+  border-bottom: 0.05rem solid #9e9ea7; }
   @media (min-width: 1024px) {
     .latest h2 {
       font-size: 2rem;
@@ -793,7 +793,8 @@ header {
       margin: 0 2rem; } }
   @media (min-height: 1366px) and (min-width: 768px) {
     .latest h2 {
-      margin: 2rem 2.5rem;
+      margin: 2rem -10rem;
+      margin-bottom: 10rem;
       font-size: 2.5rem; } }
 
 .latest-list {
@@ -824,10 +825,12 @@ header {
     @media (min-width: 1024px) {
       .latest-list h4 {
         font-size: 2rem; } }
-  .latest-list h4, .latest-list p {
+  .latest-list h4,
+  .latest-list p {
     margin: 0 2.5rem; }
     @media (min-width: 1024px) {
-      .latest-list h4, .latest-list p {
+      .latest-list h4,
+      .latest-list p {
         margin-left: 5rem; } }
   .latest-list p {
     line-height: 1.7;
@@ -837,18 +840,29 @@ header {
     @media (min-width: 1024px) {
       .latest-list p {
         font-size: 1.5rem;
-        margin-top: .5rem; } }
-  .latest-list .posted {
-    margin-top: 3.5rem !important;
-    margin: 2rem 2.5rem;
-    font-size: 1.7rem;
-    color: #717274;
-    font-weight: 100; }
-    @media (min-width: 1024px) {
-      .latest-list .posted {
-        margin-left: 5rem;
-        font-size: 1.5rem;
-        margin-bottom: .5rem !important; } }
+        margin-top: 0.5rem; } }
+  .latest-list .latest-link-desc {
+    align-self: flex-start; }
+    @media (min-height: 1024px) and (min-width: 768px) {
+      .latest-list .latest-link-desc {
+        margin-left: 4rem;
+        margin-right: 4rem; } }
+    @media (min-height: 1366px) and (min-width: 768px) {
+      .latest-list .latest-link-desc {
+        margin-left: -8rem;
+        margin-right: -8rem; } }
+
+.posted {
+  margin-top: 3.5rem !important;
+  margin: 2rem 2.5rem;
+  font-size: 1.7rem;
+  color: #717274;
+  font-weight: 100; }
+  @media (min-width: 1024px) {
+    .posted {
+      margin-left: 5rem;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem !important; } }
 
 .subscribe {
   background: url("/img/CTA-banner-texture.jpg");
