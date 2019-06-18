@@ -120,6 +120,8 @@ header {
   position: absolute;
   top: 51.5rem;
   width: 100vw;
+  animation: moveInBottom 1s ease-out 3s;
+  animation-fill-mode: backwards;
 
   @include mobile-s {
     top: 43rem;
@@ -255,7 +257,9 @@ header {
   }
 
   h1 {
-    font-size: 3rem; //Needs font change
+    font-size: 3rem;
+    animation: moveInLeft 1s ease-out;
+
 
     @include desktop-s {
       width: 45vw;
@@ -268,6 +272,7 @@ header {
     font-size: 2rem;
     font-weight: 100;
     margin-top: 1.5rem;
+    animation: moveInRight 1s ease-out;
 
     @include desktop-s {
       width: 50vw;
