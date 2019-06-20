@@ -1,3 +1,4 @@
+//Atomist Logo
 .logo {
   width: 14rem;
   margin-top: 2rem;
@@ -9,29 +10,27 @@
     margin-right: 2rem;
     margin-top: 3rem;
   }
-  
-@include mobile-landscape {
-  margin-left: 5rem;
-}
-}
 
+  @include mobile-landscape {
+    margin-left: 5rem;
+  }
+}
+//Navbar toggle button
 .navbar-toggle {
   font-size: 3rem;
   color: white;
   position: absolute;
   top: 1rem;
   right: 2.5rem;
-
-
 }
-
+//Hamburger button when visible
 .visible-icon {
   font-size: 3.4rem;
   position: absolute;
   right: 0.5rem;
   top: 1rem;
 }
-
+//Hamburger button when invisible
 .invisible-icon {
   font-size: 0 !important;
 }
@@ -42,26 +41,21 @@ button {
 
 form {
   width: 15rem;
-  
 }
-
+//Login button
 .login-btn {
   border: none;
   background-color: transparent;
   color: white;
   width: 10rem;
-  
- 
 
   @include desktop-s {
     margin-top: 5rem;
     font-size: 1.6rem;
     margin-left: 8.5rem;
-    
-    
-    
   }
 }
+//Start button
 .start-btn {
   height: 5rem;
   width: 13rem;
@@ -73,10 +67,10 @@ form {
   background-color: #5bc399;
   text-align: center;
   border: 1px solid black;
-  
+
   &:hover {
-    background-color: darken(#5bc399, 8%)
-}
+    background-color: darken(#5bc399, 8%);
+  }
 
   @include desktop-s {
     margin-top: 3rem;
@@ -102,53 +96,51 @@ form {
   background-color: #5bc399;
   border: 1px solid transparent;
   text-align: center;
-  
-  &:hover {
-    background-color: darken(#5bc399, 8%)
-}
-}
 
+  &:hover {
+    background-color: darken(#5bc399, 8%);
+  }
+}
+//Images from "The Latest From Atomist" section
 .latest-img {
   height: 25vh;
   width: 90vw;
   object-fit: cover;
   object-position: 0 0%;
-  -webkit-box-shadow: 7px 10px 52px 23px rgba(0,0,0,0.07);
-  -moz-box-shadow: 7px 10px 52px 23px rgba(0,0,0,0.07);
-  box-shadow: 7px 10px 52px 23px rgba(0,0,0,0.07);
-border: 2px solid white;
-align-self: center;
+  -webkit-box-shadow: 7px 10px 52px 23px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 7px 10px 52px 23px rgba(0, 0, 0, 0.07);
+  box-shadow: 7px 10px 52px 23px rgba(0, 0, 0, 0.07);
+  border: 2px solid white;
+  align-self: center;
 
-@include min-desktop {
-  width: 15vw;
-  height: 15vh;
-  object-position: 50% 50%;
-  margin-bottom: 0rem;
-  
-}
+  @include min-desktop {
+    width: 15vw;
+    height: 15vh;
+    object-position: 50% 50%;
+    margin-bottom: 0rem;
+  }
 
-@include desktop-s {
-  width: 15vw;
-  height: 30vh;
-  object-position: 50% 50%;
-  margin-bottom: 0rem;
-  
-}
+  @include desktop-s {
+    width: 15vw;
+    height: 30vh;
+    object-position: 50% 50%;
+    margin-bottom: 0rem;
+  }
 
-@include desktop-m {
-  height: 20vh;
-}
+  @include desktop-m {
+    height: 20vh;
+  }
 
-@include desktop-1440 {
-  height: 30vh;
-}
+  @include desktop-1440 {
+    height: 30vh;
+  }
 
-@include ipad-pro {
-  height: 15vh;
-  width: 80vw;
-  object-fit: cover;
-  object-position: 0 0%;
-}
+  @include ipad-pro {
+    height: 15vh;
+    width: 80vw;
+    object-fit: cover;
+    object-position: 0 0%;
+  }
 }
 
 .read-btn {
@@ -157,7 +149,7 @@ align-self: center;
   height: 5rem;
   width: 13rem;
   color: #43b788;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   background-color: white;
   border: 2px solid #43b788;
   margin: 2rem 2rem;
@@ -167,12 +159,10 @@ align-self: center;
     color: white;
   }
 
-  @include min-desktop  {
+  @include min-desktop {
     margin-left: 5rem;
     height: 4rem;
     width: 10rem;
     font-size: 1.3rem;
-
-
   }
 }
