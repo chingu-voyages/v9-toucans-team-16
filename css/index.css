@@ -9,6 +9,34 @@ body {
   box-sizing: border-box;
   overflow-x: hidden; }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @font-face {
   font-family: "Tofino";
   src: url("/font/Tofino-Book.woff2") format("woff2");
@@ -156,8 +184,8 @@ form {
       height: 30vh; } }
   @media (min-height: 1366px) and (min-width: 768px) {
     .latest-img {
-      height: 25vh;
-      width: 90vw;
+      height: 15vh;
+      width: 80vw;
       object-fit: cover;
       object-position: 0 0%; } }
 
@@ -272,7 +300,9 @@ header {
 .app-sdm-container {
   position: absolute;
   top: 51.5rem;
-  width: 100vw; }
+  width: 100vw;
+  animation: moveInBottom 1s ease-out 3s;
+  animation-fill-mode: backwards; }
   @media (min-width: 320px) {
     .app-sdm-container {
       top: 43rem; } }
@@ -377,7 +407,8 @@ header {
     .heading {
       top: 10rem; } }
   .heading h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    animation: moveInLeft 1s ease-out; }
     @media (min-width: 1025px) {
       .heading h1 {
         width: 45vw;
@@ -386,7 +417,8 @@ header {
   .heading p {
     font-size: 2rem;
     font-weight: 100;
-    margin-top: 1.5rem; }
+    margin-top: 1.5rem;
+    animation: moveInRight 1s ease-out; }
     @media (min-width: 1025px) {
       .heading p {
         width: 50vw; } }
@@ -514,8 +546,10 @@ header {
     .modern-delivery-platform {
       margin-top: 60rem; } }
   .modern-delivery-platform h2 {
+    display: block;
     font-size: 2.8em;
-    margin-bottom: 0.8em; }
+    margin: 0 auto 0.8em auto;
+    width: 90%; }
   @media (min-width: 768px) {
     .modern-delivery-platform > div {
       display: grid;
@@ -791,7 +825,8 @@ header {
       margin: 0 2rem; } }
   @media (min-height: 1366px) and (min-width: 768px) {
     .latest h2 {
-      margin: 2rem 2.5rem;
+      margin: 2rem -10rem;
+      margin-bottom: 10rem;
       font-size: 2.5rem; } }
 
 .latest-list {
@@ -838,17 +873,29 @@ header {
       .latest-list p {
         font-size: 1.5rem;
         margin-top: 0.5rem; } }
-  .latest-list .posted {
-    margin-top: 3.5rem !important;
-    margin: 2rem 2.5rem;
-    font-size: 1.7rem;
-    color: #717274;
-    font-weight: 100; }
-    @media (min-width: 1024px) {
-      .latest-list .posted {
-        margin-left: 5rem;
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem !important; } }
+        
+  .latest-list .latest-link-desc {
+    align-self: flex-start; }
+    @media (min-height: 1024px) and (min-width: 768px) {
+      .latest-list .latest-link-desc {
+        margin-left: 4rem;
+        margin-right: 4rem; } }
+    @media (min-height: 1366px) and (min-width: 768px) {
+      .latest-list .latest-link-desc {
+        margin-left: -8rem;
+        margin-right: -8rem; } }
+
+.posted {
+  margin-top: 3.5rem !important;
+  margin: 2rem 2.5rem;
+  font-size: 1.7rem;
+  color: #717274;
+  font-weight: 100; }
+  @media (min-width: 1024px) {
+    .posted {
+      margin-left: 5rem;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem !important; } }
 
 .subscribe {
   background: url("/img/CTA-banner-texture.jpg");

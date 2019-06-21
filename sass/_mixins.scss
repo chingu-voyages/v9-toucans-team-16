@@ -1,3 +1,4 @@
+//Mobile breakpoints
 @mixin mobile-s {
   @media (min-width: #{$mobile-s}) {
     @content;
@@ -22,6 +23,7 @@
   }
 }
 
+//Breakpoint with max width 1025
 @mixin max-desktop {
   @media (max-width: #{$desktop-s}) {
     @content;
@@ -34,7 +36,7 @@
   }
 }
 
-//Added Extra-small and Large smartphone breakpoints
+//Breakpoints for tablets
 
 @mixin tablet-s {
   @media (min-width: #{$tablet-s}) {
@@ -58,13 +60,14 @@
     @content;
   }
 }
-
+//Breakpoint for 1024x1288 monitors
 @mixin desktop-1024 {
   @media (min-height: #{$desktop-1288-height}) and (min-width: #{$desktop-1024-width}) {
     @content;
   }
 }
 
+//Desktop breakpoints
 @mixin desktop-s {
   @media (min-width: #{$desktop-s}) {
     @content;
@@ -76,7 +79,7 @@
     @content;
   }
 }
-
+//Breakpoint for 1440x712 monitors
 @mixin desktop-1440 {
   @media (max-height: #{$desktop-712-height}) and (min-width: #{$desktop-m}) {
     @content;
@@ -88,13 +91,13 @@
     @content;
   }
 }
-
+//Breakpoint for 4k displays
 @mixin desktop-4k {
   @media (min-height: #{$desktop-4k-height}) and (min-width: #{$desktop-4k-width}) {
     @content;
   }
 }
-
+//Mobile landscape breakpoint
 @mixin mobile-landscape {
   @media (orientation: landscape) and (max-width: 900px) {
     @content;

@@ -1,3 +1,4 @@
+//Header section
 header {
   background-image: url("/img/atomist_logo_shapes_banner-home.jpg");
   background-size: cover;
@@ -120,6 +121,8 @@ header {
   position: absolute;
   top: 51.5rem;
   width: 100vw;
+  animation: moveInBottom 1s ease-out 3s;
+  animation-fill-mode: backwards;
 
   @include mobile-s {
     top: 43rem;
@@ -255,7 +258,8 @@ header {
   }
 
   h1 {
-    font-size: 3rem; //Needs font change
+    font-size: 3rem;
+    animation: moveInLeft 1s ease-out;
 
     @include desktop-s {
       width: 45vw;
@@ -268,6 +272,7 @@ header {
     font-size: 2rem;
     font-weight: 100;
     margin-top: 1.5rem;
+    animation: moveInRight 1s ease-out;
 
     @include desktop-s {
       width: 50vw;
@@ -438,8 +443,10 @@ header {
   }
 
   h2 {
+    display: block;
     font-size: 2.8em;
-    margin-bottom: 0.8em;
+    margin: 0 auto 0.8em auto;
+    width: 90%;
   }
 
   & > div {
@@ -844,7 +851,8 @@ header {
     }
 
     @include ipad-pro {
-      margin: 2rem 2.5rem;
+      margin: 2rem -10rem;
+      margin-bottom: 10rem;
       font-size: 2.5rem;
     }
   }
@@ -910,17 +918,30 @@ header {
     }
   }
 
-  .posted {
-    margin-top: 3.5rem !important;
-    margin: 2rem 2.5rem;
-    font-size: 1.7rem;
-    color: #717274;
-    font-weight: 100;
-    @include min-desktop {
-      margin-left: 5rem;
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem !important;
+  .latest-link-desc {
+    align-self: flex-start;
+
+    @include ipad {
+      margin-left: 4rem;
+      margin-right: 4rem;
     }
+
+    @include ipad-pro {
+      margin-left: -8rem;
+      margin-right: -8rem;
+    }
+  }
+}
+.posted {
+  margin-top: 3.5rem !important;
+  margin: 2rem 2.5rem;
+  font-size: 1.7rem;
+  color: #717274;
+  font-weight: 100;
+  @include min-desktop {
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem !important;
   }
 }
 
