@@ -39,25 +39,25 @@ body {
 
 @font-face {
   font-family: "Tofino";
-  src: url("/font/Tofino-Book.woff2") format("woff2");
+  src: url("../font/Tofino-Book.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "Tofino";
-  src: url("/font/Tofino-Regular.woff2") format("woff2");
+  src: url("../font/Tofino-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Tofino";
-  src: url("/font/Tofino-Medium.woff2") format("woff2");
+  src: url("../font/Tofino-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "Tofino";
-  src: url("/font/Tofino-Semibold.woff2") format("woff2");
+  src: url("../font/Tofino-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal; }
 
@@ -873,7 +873,6 @@ header {
       .latest-list p {
         font-size: 1.5rem;
         margin-top: 0.5rem; } }
-        
   .latest-list .latest-link-desc {
     align-self: flex-start; }
     @media (min-height: 1024px) and (min-width: 768px) {
