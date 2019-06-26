@@ -1,6 +1,6 @@
 //Header section
 header {
-  background-image: url(../img/atomist_logo_shapes_banner-home.jpg);
+  background-image: url("/img/atomist_logo_shapes_banner-home.jpg");
   background-size: cover;
   height: 70vh;
   background-position: bottom;
@@ -112,7 +112,7 @@ header {
 }
 
 .background-img-toggle {
-  background-image: url(../img/atomist_logo_shapes_banner-product.jpg);
+  background-image: url("/img/atomist_logo_shapes_banner-product.jpg");
 }
 
 //Sdm Image Container
@@ -947,7 +947,7 @@ header {
 
 // Subscribe
 .subscribe {
-  background: url(../img/CTA-banner-texture.jpg);
+  background: url("/img/CTA-banner-texture.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
